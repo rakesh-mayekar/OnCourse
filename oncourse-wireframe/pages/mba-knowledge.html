@@ -9,34 +9,260 @@
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
 
-  <!-- HEADER -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <div class="flex items-center space-x-3">
+  <!-- ================= GLOBAL NAVIGATION (Standardized 80px Crimson-Inspired Mega-Menu Header) ================= -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-xs h-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+      <div class="flex items-center justify-between h-full">
+        
+        <!-- Brand Logo Lockup -->
+        <div class="flex items-center space-x-3 flex-shrink-0">
           <a href="home.html" class="flex items-center space-x-2.5 group">
-            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm">OG</div>
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm group-hover:bg-blue-800 transition-colors">
+              OG
+            </div>
             <div>
-              <span class="text-xl font-extrabold tracking-tight text-gray-900 block leading-tight">OnCourse</span>
-              <span class="text-xs uppercase tracking-widest text-blue-800 font-semibold block">Global Admissions</span>
+              <span class="text-xl font-black tracking-tight text-gray-900 block leading-tight">OnCourse</span>
+              <span class="text-[10px] uppercase tracking-widest text-blue-800 font-bold block">Global Admissions</span>
             </div>
           </a>
         </div>
-        <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium text-gray-700">
-          <a href="about.html" class="hover:text-blue-900 py-1">About Us</a>
-          <a href="undergraduate.html" class="hover:text-blue-900 py-1">Undergraduate</a>
-          <a href="masters.html" class="hover:text-blue-900 py-1">Master's</a>
-          <a href="mba.html" class="text-blue-900 font-bold border-b-2 border-blue-900 py-1">MBA</a>
-          <a href="test-prep.html" class="hover:text-blue-900 py-1">Test Prep</a>
-          <a href="contact.html" class="hover:text-blue-900 py-1">Contact Us</a>
-          <a href="careers.html" class="px-3.5 py-1.5 rounded-md border border-blue-800 text-blue-900 text-xs font-semibold uppercase">Join Our Team</a>
-          <a href="contact.html#consultation-form" class="px-4 py-2 rounded-md bg-blue-900 text-white text-sm font-semibold">Book a Consultation</a>
+
+        <!-- Desktop Navigation & Mega-Menus (Crimson Education Benchmark) -->
+        <nav class="hidden xl:flex items-center space-x-6 text-sm font-semibold text-gray-700 h-full">
+          
+          <!-- MENU 1: Admissions Programs (Mega-Menu) -->
+          <div class="relative group h-full flex items-center nav-item-has-menu">
+            <button type="button" class="inline-flex items-center gap-1.5 hover:text-blue-900 transition-colors py-2 text-gray-800" aria-expanded="false">
+              <span>Admissions Programs</span>
+              <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-900 transition-transform group-hover:rotate-180 duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <!-- Mega-Menu Dropdown Panel -->
+            <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[880px] bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div class="grid grid-cols-12 gap-6">
+                
+                <!-- Col 1: Undergraduate (Class 8–12) -->
+                <div class="col-span-4 border-r border-gray-100 pr-5 space-y-3">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                    <a href="undergraduate.html" class="text-xs font-bold uppercase tracking-wider text-blue-900 hover:underline">
+                      Undergraduate (Class 8–12)
+                    </a>
+                  </div>
+                  <ul class="space-y-2 text-xs">
+                    <li>
+                      <a href="undergraduate.html" class="font-semibold text-gray-800 hover:text-blue-900 block">Undergraduate Overview</a>
+                      <span class="text-[11px] text-gray-400 block">Class 8–12 inclusive roadmap</span>
+                    </li>
+                    <li>
+                      <a href="undergraduate-program.html" class="font-semibold text-gray-800 hover:text-blue-900 block">Program & Milestones</a>
+                      <span class="text-[11px] text-gray-400 block">Stage 1 Foundation &bull; Stage 2 Spikes</span>
+                    </li>
+                    <li>
+                      <a href="undergraduate-knowledge.html" class="font-semibold text-gray-800 hover:text-blue-900 block">US & UK Strategy Guides</a>
+                      <span class="text-[11px] text-gray-400 block">Ivy League Common App & Oxbridge UCAS</span>
+                    </li>
+                    <li>
+                      <a href="undergraduate-success.html" class="font-semibold text-gray-800 hover:text-blue-900 block">UG Admit Stories</a>
+                      <span class="text-[11px] text-gray-400 block">Harvard, Stanford, Oxford, UPenn</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Col 2: Postgraduate & MBA -->
+                <div class="col-span-4 border-r border-gray-100 pr-5 space-y-3">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                    <a href="mba.html" class="text-xs font-bold uppercase tracking-wider text-amber-900 hover:underline">
+                      Postgraduate & MBA
+                    </a>
+                  </div>
+                  <ul class="space-y-2 text-xs">
+                    <li>
+                      <a href="mba.html" class="font-semibold text-gray-800 hover:text-blue-900 block">MBA Advisory Overview</a>
+                      <span class="text-[11px] text-gray-400 block">M7, European Top 10 & EMBA</span>
+                    </li>
+                    <li>
+                      <a href="masters.html" class="font-semibold text-gray-800 hover:text-blue-900 block">Master's (MS/MA) Programs</a>
+                      <span class="text-[11px] text-gray-400 block">STEM, AI/ML, Data Science, Finance</span>
+                    </li>
+                    <li>
+                      <a href="mba-program.html" class="font-semibold text-gray-800 hover:text-blue-900 block">M7 Strategic Roadmaps</a>
+                      <span class="text-[11px] text-gray-400 block">Career transitions & essay positioning</span>
+                    </li>
+                    <li>
+                      <a href="mba-success.html" class="font-semibold text-gray-800 hover:text-blue-900 block">MBA Admit Case Studies</a>
+                      <span class="text-[11px] text-gray-400 block">Wharton, Stanford GSB, INSEAD</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Col 3: Test Prep & Featured Callout -->
+                <div class="col-span-4 space-y-4">
+                  <div>
+                    <div class="flex items-center gap-2 mb-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                      <a href="test-prep.html" class="text-xs font-bold uppercase tracking-wider text-emerald-900 hover:underline">
+                        Test Prep & Transfer
+                      </a>
+                    </div>
+                    <ul class="space-y-1.5 text-xs text-gray-700">
+                      <li><a href="test-prep.html" class="hover:text-blue-900 font-medium">&bull; Digital SAT & ACT Diagnostics</a></li>
+                      <li><a href="test-prep.html" class="hover:text-blue-900 font-medium">&bull; GMAT Focus & GRE Adaptive Coaching</a></li>
+                      <li><a href="test-prep.html#transfer-section" class="hover:text-blue-900 font-medium">&bull; University Transfer Admissions</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Crimson-Style Featured Playbook Card -->
+                  <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-100">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-blue-900 bg-blue-200/60 px-1.5 py-0.5 rounded">
+                      Featured Playbook
+                    </span>
+                    <h4 class="text-xs font-bold text-gray-900 mt-1.5">Class 8–12 Admissions Roadmap</h4>
+                    <p class="text-[11px] text-gray-500 mt-0.5">How top candidates build extracurricular spikes.</p>
+                    <a href="undergraduate-knowledge.html" class="text-xs font-bold text-blue-900 hover:underline mt-2 inline-flex items-center gap-1">
+                      Download Free Guide &rarr;
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- MENU 2: Our Results (Dropdown) -->
+          <div class="relative group h-full flex items-center nav-item-has-menu">
+            <button type="button" class="inline-flex items-center gap-1.5 hover:text-blue-900 transition-colors py-2 text-gray-800" aria-expanded="false">
+              <span>Our Results</span>
+              <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-900 transition-transform group-hover:rotate-180 duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <div class="absolute top-20 left-0 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50 space-y-2">
+              <a href="undergraduate-success.html" class="block p-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                <span class="text-xs font-bold text-gray-900 block">Undergraduate Admit Stories</span>
+                <span class="text-[11px] text-gray-500 block">Ivy League, Stanford, Oxford, Cambridge</span>
+              </a>
+              <a href="mba-success.html" class="block p-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                <span class="text-xs font-bold text-gray-900 block">MBA Alumni Placements</span>
+                <span class="text-[11px] text-gray-500 block">Wharton, HBS, Stanford GSB, INSEAD</span>
+              </a>
+              <div class="pt-2 border-t border-gray-100 px-2.5">
+                <div class="text-[11px] text-blue-900 font-bold">Admissions Advantage</div>
+                <p class="text-[10px] text-gray-500">6.9x higher acceptance rate compared to general applicant pools.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MENU 3: Admissions Resources (Dropdown) -->
+          <div class="relative group h-full flex items-center nav-item-has-menu">
+            <button type="button" class="inline-flex items-center gap-1.5 hover:text-blue-900 transition-colors py-2 text-gray-800" aria-expanded="false">
+              <span>Resources</span>
+              <svg class="w-4 h-4 text-gray-400 group-hover:text-blue-900 transition-transform group-hover:rotate-180 duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <div class="absolute top-20 left-0 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50 space-y-2">
+              <a href="undergraduate-knowledge.html" class="block p-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                <span class="text-xs font-bold text-gray-900 block">Knowledge Centre & Whitepapers</span>
+                <span class="text-[11px] text-gray-500 block">Essays, extracurriculars & test guides</span>
+              </a>
+              <a href="undergraduate-events.html" class="block p-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                <span class="text-xs font-bold text-gray-900 block">Admissions Masterclasses & Webinars</span>
+                <span class="text-[11px] text-gray-500 block">Live interactive strategy workshops</span>
+              </a>
+              <a href="mba-knowledge.html" class="block p-2.5 rounded-lg hover:bg-gray-50 transition-colors">
+                <span class="text-xs font-bold text-gray-900 block">MBA Strategy Playbooks</span>
+                <span class="text-[11px] text-gray-500 block">M7 essay analysis & recommender briefs</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Single Links -->
+          <a href="about.html" class="hover:text-blue-900 transition-colors py-2 text-gray-800">About Us</a>
+          <a href="contact.html" class="hover:text-blue-900 transition-colors py-2 text-gray-800">Contact Us</a>
+
+          <!-- Persistent Outlined Recruitment CTA -->
+          <a href="careers.html" class="px-3.5 py-2 rounded-md border-2 border-blue-900 text-blue-900 hover:bg-blue-50 font-bold text-xs uppercase tracking-wider transition-all">
+            Join Our Team
+          </a>
+
+          <!-- Primary Solid Consultation CTA (Always Visible & Prominent) -->
+          <a href="contact.html#consultation-form" class="px-4 py-2.5 rounded-md bg-blue-900 text-white hover:bg-blue-800 font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all">
+            Book a Consultation
+          </a>
+
         </nav>
+
+        <!-- Tablet Quick Actions (lg to xl) -->
+        <div class="hidden lg:flex xl:hidden items-center space-x-3">
+          <a href="careers.html" class="px-3 py-1.5 rounded-md border border-blue-800 text-blue-900 text-xs font-bold uppercase">
+            Careers
+          </a>
+          <a href="contact.html#consultation-form" class="px-3.5 py-2 rounded-md bg-blue-900 text-white text-xs font-bold uppercase">
+            Book Consultation
+          </a>
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button (< lg) -->
         <div class="flex lg:hidden items-center space-x-2">
-          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold">Book</a>
-          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-bold">
+            Book
+          </a>
+          <button id="mobile-menu-toggle-sm" type="button" class="p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100" aria-expanded="false" aria-label="Toggle Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Accordion Style matching Crimson IA) -->
+    <div id="mobile-nav-drawer" class="hidden lg:hidden border-t border-gray-200 bg-white px-4 pt-3 pb-8 space-y-4 max-h-[85vh] overflow-y-auto shadow-xl">
+      
+      <!-- Mobile Section 1: Admissions Programs -->
+      <div class="border-b border-gray-100 pb-3">
+        <div class="text-xs font-black uppercase tracking-wider text-blue-900 mb-2">Admissions Programs</div>
+        <div class="space-y-1.5 pl-2 text-sm">
+          <a href="undergraduate.html" class="block py-1 text-gray-800 font-semibold">&bull; Undergraduate (Class 8–12)</a>
+          <a href="undergraduate-program.html" class="block py-1 text-xs text-gray-500 pl-3">Roadmaps & Milestones</a>
+          <a href="masters.html" class="block py-1 text-gray-800 font-semibold mt-1">&bull; Master's (MS/MA) Degrees</a>
+          <a href="mba.html" class="block py-1 text-gray-800 font-semibold mt-1">&bull; MBA Advisory (M7 & Top 10)</a>
+          <a href="test-prep.html" class="block py-1 text-gray-800 font-semibold mt-1">&bull; Test Prep & Transfer</a>
         </div>
       </div>
+
+      <!-- Mobile Section 2: Results & Resources -->
+      <div class="border-b border-gray-100 pb-3">
+        <div class="text-xs font-black uppercase tracking-wider text-blue-900 mb-2">Results & Resources</div>
+        <div class="space-y-1.5 pl-2 text-sm">
+          <a href="undergraduate-success.html" class="block py-1 text-gray-800">&bull; Undergraduate Admit Stories</a>
+          <a href="mba-success.html" class="block py-1 text-gray-800">&bull; MBA Alumni Admits</a>
+          <a href="undergraduate-knowledge.html" class="block py-1 text-gray-800">&bull; Knowledge Centre Guides</a>
+          <a href="undergraduate-events.html" class="block py-1 text-gray-800">&bull; Admissions Masterclasses</a>
+        </div>
+      </div>
+
+      <!-- Mobile Section 3: Company -->
+      <div class="border-b border-gray-100 pb-3 space-y-2 text-sm font-semibold">
+        <a href="about.html" class="block py-1 text-gray-800">About OnCourse Global</a>
+        <a href="contact.html" class="block py-1 text-gray-800">Contact & Global Offices</a>
+        <a href="careers.html" class="block py-1 text-blue-900 font-bold">Careers & Open Roles (Hiring)</a>
+      </div>
+
+      <!-- Mobile Buttons -->
+      <div class="pt-2 flex flex-col gap-2.5">
+        <a href="careers.html" class="w-full text-center px-4 py-2.5 rounded-md border-2 border-blue-900 text-blue-900 font-bold text-xs uppercase tracking-wider">
+          Join Our Team
+        </a>
+        <a href="contact.html#consultation-form" class="w-full text-center px-4 py-3 rounded-md bg-blue-900 text-white font-bold text-xs uppercase tracking-wider shadow-md">
+          Book a Free Consultation
+        </a>
+      </div>
+
     </div>
   </header>
 
@@ -183,10 +409,80 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-xs">
-      <p>&copy; 2026 OnCourse Global. MBA Knowledge Centre.</p>
+  <!-- ================= GLOBAL FOOTER (Unified Crimson-Grade Footer) ================= -->
+  <footer class="bg-gray-950 text-gray-300 border-t border-gray-800">
+    <!-- Recruitment Banner (Crimson Inspiration) -->
+    <div class="bg-blue-950/80 border-b border-blue-900/50 py-4 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+        <div class="flex items-center space-x-3">
+          <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider bg-amber-400 text-blue-950">We're Hiring</span>
+          <p class="text-xs text-blue-100 font-medium">Join our global network of Ivy League, Oxbridge & Top 10 alumni mentors and former admissions directors.</p>
+        </div>
+        <a href="careers.html" class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors whitespace-nowrap">
+          View Career Opportunities &rarr;
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-sm">OG</div>
+            <span class="text-white font-bold text-lg tracking-tight">OnCourse Global</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Premium global admissions consultancy providing personalized mentorship, strategic profile building, and verified outcomes for top global institutions.
+          </p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="hover:text-white transition-colors">Our Story & Leadership</a></li>
+            <li><a href="about.html#team" class="hover:text-white transition-colors">Admissions Directors & Mentors</a></li>
+            <li><a href="contact.html#offices" class="hover:text-white transition-colors">Our Global Offices</a></li>
+            <li><a href="contact.html#faqs" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4 border-l-2 border-blue-500 pl-2">Admissions Programs</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="undergraduate.html" class="hover:text-white transition-colors block font-medium text-gray-200">Undergraduate Admissions (Class 8–12)</a></li>
+            <li><a href="undergraduate-program.html" class="hover:text-white transition-colors block text-gray-400 pl-2">&bull; Profile Building & Strategy</a></li>
+            <li><a href="masters.html" class="hover:text-white transition-colors block font-medium text-gray-200 mt-2">Master's & Specialized Degrees</a></li>
+            <li><a href="mba.html" class="hover:text-white transition-colors block font-medium text-gray-200 mt-2">MBA & Executive Advisory</a></li>
+            <li><a href="mba-program.html" class="hover:text-white transition-colors block text-gray-400 pl-2">&bull; Top Global MBA Strategy</a></li>
+            <li><a href="test-prep.html" class="hover:text-white transition-colors block font-medium text-gray-200 mt-2">Test Prep & Transfer Admissions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4 border-l-2 border-blue-500 pl-2">Resources & Insights</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="undergraduate-knowledge.html" class="hover:text-white transition-colors block font-medium text-gray-200">Knowledge Centre</a></li>
+            <li><a href="undergraduate-knowledge.html" class="hover:text-white transition-colors block text-gray-400 pl-2">&bull; US & UK Application Guides</a></li>
+            <li><a href="undergraduate-success.html" class="hover:text-white transition-colors block font-medium text-gray-200 mt-2">Success Stories & Case Studies</a></li>
+            <li><a href="mba-success.html" class="hover:text-white transition-colors block text-gray-400 pl-2">&bull; MBA Alumni Admits</a></li>
+            <li><a href="undergraduate-events.html" class="hover:text-white transition-colors block font-medium text-gray-200 mt-2">Webinars & Masterclasses</a></li>
+            <li><a href="mba-events.html" class="hover:text-white transition-colors block text-gray-400 pl-2">&bull; MBA Strategy Roundtables</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4 border-l-2 border-blue-500 pl-2">Global Offices</h4>
+          <div class="space-y-3 text-xs">
+            <div><span class="text-gray-200 font-semibold block">Mumbai (HQ)</span><span class="text-gray-400">Nariman Point & Bandra West</span></div>
+            <div><span class="text-gray-200 font-semibold block">New Delhi & Gurgaon</span><span class="text-gray-400">Connaught Place & Cyber City</span></div>
+            <div><span class="text-gray-200 font-semibold block">Dubai (UAE)</span><span class="text-gray-400">DIFC / Downtown Dubai</span></div>
+            <div class="pt-2 border-t border-gray-800">
+              <a href="contact.html#offices" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1">View Office Addresses & Maps &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>&copy; 2026 OnCourse Global. Structural UX Wireframe Prototype for K Webmaker SOW Phase 1/2.</p>
+        <div class="flex items-center space-x-6">
+          <a href="contact.html" class="hover:text-gray-400">Privacy Policy</a>
+          <a href="contact.html" class="hover:text-gray-400">Terms of Service</a>
+          <a href="about.html" class="hover:text-gray-400">Brand Methodology</a>
+        </div>
+      </div>
     </div>
   </footer>
 

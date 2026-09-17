@@ -15,14 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 1. Mobile Menu Toggle
 function initMobileMenu() {
-  const toggleBtn = document.getElementById('mobile-menu-toggle');
-  const mobileNav = document.getElementById('mobile-nav-drawer');
-  if (!toggleBtn || !mobileNav) return;
+  const toggleButtons = [
+    document.getElementById('mobile-menu-toggle'),
+    document.getElementById('mobile-menu-toggle-sm'),
+    document.getElementById('mobile-menu-toggle-lg')
+  ].filter(Boolean);
 
-  toggleBtn.addEventListener('click', () => {
-    const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-    toggleBtn.setAttribute('aria-expanded', !isExpanded);
-    mobileNav.classList.toggle('hidden');
+  const mobileNav = document.getElementById('mobile-nav-drawer');
+  if (!mobileNav) return;
+
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !isExpanded);
+      mobileNav.classList.toggle('hidden');
+    });
+  });
+
+  // Close drawer if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!mobileNav.classList.contains('hidden') && !mobileNav.contains(e.target) && !toggleButtons.some(b => b.contains(e.target))) {
+      mobileNav.classList.add('hidden');
+      toggleButtons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+    }
   });
 }
 
