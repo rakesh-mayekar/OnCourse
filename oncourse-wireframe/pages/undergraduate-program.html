@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undergraduate Programs & Roadmaps | OnCourse Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center space-x-3">
+          <a href="home.html" class="flex items-center space-x-2.5 group">
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm">OG</div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-gray-900 block leading-tight">OnCourse</span>
+              <span class="text-xs uppercase tracking-widest text-blue-800 font-semibold block">Global Admissions</span>
+            </div>
+          </a>
+        </div>
+        <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium text-gray-700">
+          <a href="about.html" class="hover:text-blue-900 py-1">About Us</a>
+          <a href="undergraduate.html" class="text-blue-900 font-bold border-b-2 border-blue-900 py-1">Undergraduate</a>
+          <a href="masters.html" class="hover:text-blue-900 py-1">Master's</a>
+          <a href="mba.html" class="hover:text-blue-900 py-1">MBA</a>
+          <a href="test-prep.html" class="hover:text-blue-900 py-1">Test Prep</a>
+          <a href="contact.html" class="hover:text-blue-900 py-1">Contact Us</a>
+          <a href="careers.html" class="px-3.5 py-1.5 rounded-md border border-blue-800 text-blue-900 text-xs font-semibold uppercase">Join Our Team</a>
+          <a href="contact.html#consultation-form" class="px-4 py-2 rounded-md bg-blue-900 text-white text-sm font-semibold">Book a Consultation</a>
+        </nav>
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold">Book</a>
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav-drawer" class="hidden lg:hidden border-t border-gray-200 bg-white px-4 pt-3 pb-6 space-y-2 text-sm font-medium">
+      <a href="about.html" class="block py-2">About Us</a>
+      <a href="undergraduate.html" class="block py-2 text-blue-900 font-bold">Undergraduate</a>
+      <a href="masters.html" class="block py-2">Master's</a>
+      <a href="mba.html" class="block py-2">MBA</a>
+      <a href="test-prep.html" class="block py-2">Test Prep</a>
+      <a href="contact.html" class="block py-2">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- SUB-NAV TABS -->
+  <nav class="bg-blue-950 text-white border-b border-blue-900 sticky top-20 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between overflow-x-auto hide-scrollbar py-3 space-x-6 text-xs sm:text-sm font-semibold whitespace-nowrap">
+        <div class="flex items-center space-x-6">
+          <a href="undergraduate.html" class="text-gray-300 hover:text-white pb-1">Overview</a>
+          <a href="undergraduate-program.html" class="text-amber-400 border-b-2 border-amber-400 pb-1">Program & Roadmaps</a>
+          <a href="undergraduate-knowledge.html" class="text-gray-300 hover:text-white pb-1">Knowledge Centre</a>
+          <a href="undergraduate-success.html" class="text-gray-300 hover:text-white pb-1">Success Stories</a>
+          <a href="undergraduate-events.html" class="text-gray-300 hover:text-white pb-1">Events & Webinars</a>
+        </div>
+        <div class="hidden md:flex text-xs text-blue-200">Class 8–12 Admissions Framework</div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow py-10 lg:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="text-xs text-gray-500 mb-4 flex items-center space-x-2">
+        <a href="home.html" class="hover:text-blue-900">Home</a>
+        <span>/</span>
+        <a href="undergraduate.html" class="hover:text-blue-900">Undergraduate</a>
+        <span>/</span>
+        <span class="text-gray-800 font-semibold">Programs & Roadmaps</span>
+      </nav>
+
+      <!-- Hub Header Title Block -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-gray-200 pb-6 mb-8 gap-4">
+        <div>
+          <span class="inline-block px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-900 mb-2">
+            Admissions Curriculum & Roadmaps
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            Undergraduate Advisory Tracks (Class 8 to 12)
+          </h1>
+          <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl">
+            Structured longitudinal roadmaps tailored to each developmental stage and target jurisdiction across the US, UK, Canada, and Singapore.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html#consultation-form" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-blue-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-blue-800 shadow-xs">
+            Free Profile Evaluation &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Filter / Category Tag Bar -->
+      <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-xs mb-8">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar text-xs font-semibold whitespace-nowrap">
+            <span class="text-gray-500 font-bold uppercase text-[11px] pr-1">Filter Track:</span>
+            <button class="px-3 py-1.5 rounded-md bg-blue-900 text-white shadow-xs">All Tracks</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Class 8–9 Foundation</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Class 10–11 Spike Building</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Class 12 Application Execution</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Oxbridge & UK Specialist</button>
+          </div>
+          <div class="text-xs text-gray-500">Showing <strong>6</strong> Advisory Roadmaps</div>
+        </div>
+      </div>
+
+      <!-- 3-Col Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-blue-100 text-blue-900 text-xs font-bold">Class 8 & 9</span>
+              <span class="text-xs text-gray-400">Foundation Track</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Early Explorer & Curiosity Incubator</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Diagnostic personality profiling, subject choice alignment for IB/IGCSE, structured academic reading lists, and early extracurricular exploration.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Reading & writing mentorship</li>
+              <li>&bull; High school curriculum advisory</li>
+              <li>&bull; Introduction to summer opportunities</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 2 Years</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl border-2 border-blue-900/30 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow bg-blue-50/20">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-blue-900 text-white text-xs font-bold">Class 10 & 11</span>
+              <span class="text-xs text-blue-800 font-semibold">Flagship Track</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Extracurricular Spike & Leadership Accelerator</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Mentored independent capstones, research paper publications, Olympiads, and digital standardized test diagnostic timelines (SAT/ACT).
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Independent capstone project mentorship</li>
+              <li>&bull; Standardized testing schedule (SAT/ACT)</li>
+              <li>&bull; Competitive summer school selection</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 2 Years</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-blue-100 text-blue-900 text-xs font-bold">Class 12</span>
+              <span class="text-xs text-gray-400">Intensive</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Common App & Global Application Strategy</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Comprehensive application architecture for ED/EA and Regular Decision: Personal Statement brainstorming, supplemental essays, and interview coaching.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; 1-on-1 essay narrative refinement</li>
+              <li>&bull; Strategic university list balancing (Reach/Target)</li>
+              <li>&bull; Mock alumni interviews</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 12 Months</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-indigo-100 text-indigo-900 text-xs font-bold">UK Specialist</span>
+              <span class="text-xs text-gray-400">Oxbridge & Russell Group</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Oxbridge & UCAS Tutorial Track</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Hyper-academic personal statement synthesis, college selection, admissions test preparation (BMAT, UCAT, LNAT, STEP), and tutorial-style interview simulations.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Oxbridge collegiate college selection</li>
+              <li>&bull; Academic admissions test coaching</li>
+              <li>&bull; Mock tutorial debates with Oxford/Cambridge alumni</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 1–2 Years</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-purple-100 text-purple-900 text-xs font-bold">Multi-Country</span>
+              <span class="text-xs text-gray-400">Canada, Europe & Asia</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Global Diversification Roadmap</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Unified application portfolio covering University of Toronto, UBC, NUS, NTU Singapore, and top English-taught European undergraduate programs.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Multi-jurisdictional portal management</li>
+              <li>&bull; Scholarship application alignment</li>
+              <li>&bull; Visa and international transition guidance</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 1–2 Years</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-emerald-100 text-emerald-900 text-xs font-bold">Athletic & Arts</span>
+              <span class="text-xs text-gray-400">Special Talent</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Recruited Athlete & Portfolio Track</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              NCAA recruiting coordination for student-athletes, coach outreach strategy, and fine arts / architecture portfolio curation for selective programs.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; NCAA Eligibility Center strategy</li>
+              <li>&bull; Highlight reels & direct coach engagement</li>
+              <li>&bull; Creative arts portfolio critiques</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Duration: 2–3 Years</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Enrollment Details &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="flex items-center justify-center space-x-2 pt-6 border-t border-gray-200 text-xs font-semibold">
+        <button class="px-3 py-2 rounded border border-gray-300 text-gray-400 cursor-not-allowed" disabled>&larr; Previous</button>
+        <button class="px-3.5 py-2 rounded bg-blue-900 text-white font-bold">1</button>
+        <button class="px-3.5 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-100">2</button>
+        <button class="px-3 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-100">Next &rarr;</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-xs">
+      <p>&copy; 2026 OnCourse Global. Undergraduate Programs & Roadmaps.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/wireframe.js"></script>
+</body>
+</html>

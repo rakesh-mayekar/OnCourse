@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undergraduate Admissions Webinars & Events | OnCourse Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center space-x-3">
+          <a href="home.html" class="flex items-center space-x-2.5 group">
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm">OG</div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-gray-900 block leading-tight">OnCourse</span>
+              <span class="text-xs uppercase tracking-widest text-blue-800 font-semibold block">Global Admissions</span>
+            </div>
+          </a>
+        </div>
+        <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium text-gray-700">
+          <a href="about.html" class="hover:text-blue-900 py-1">About Us</a>
+          <a href="undergraduate.html" class="text-blue-900 font-bold border-b-2 border-blue-900 py-1">Undergraduate</a>
+          <a href="masters.html" class="hover:text-blue-900 py-1">Master's</a>
+          <a href="mba.html" class="hover:text-blue-900 py-1">MBA</a>
+          <a href="test-prep.html" class="hover:text-blue-900 py-1">Test Prep</a>
+          <a href="contact.html" class="hover:text-blue-900 py-1">Contact Us</a>
+          <a href="careers.html" class="px-3.5 py-1.5 rounded-md border border-blue-800 text-blue-900 text-xs font-semibold uppercase">Join Our Team</a>
+          <a href="contact.html#consultation-form" class="px-4 py-2 rounded-md bg-blue-900 text-white text-sm font-semibold">Book a Consultation</a>
+        </nav>
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold">Book</a>
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUB-NAV TABS -->
+  <nav class="bg-blue-950 text-white border-b border-blue-900 sticky top-20 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between overflow-x-auto hide-scrollbar py-3 space-x-6 text-xs sm:text-sm font-semibold whitespace-nowrap">
+        <div class="flex items-center space-x-6">
+          <a href="undergraduate.html" class="text-gray-300 hover:text-white pb-1">Overview</a>
+          <a href="undergraduate-program.html" class="text-gray-300 hover:text-white pb-1">Program & Roadmaps</a>
+          <a href="undergraduate-knowledge.html" class="text-gray-300 hover:text-white pb-1">Knowledge Centre</a>
+          <a href="undergraduate-success.html" class="text-gray-300 hover:text-white pb-1">Success Stories</a>
+          <a href="undergraduate-events.html" class="text-amber-400 border-b-2 border-amber-400 pb-1">Events & Webinars</a>
+        </div>
+        <div class="hidden md:flex text-xs text-blue-200">Interactive Masterclasses</div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow py-10 lg:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="text-xs text-gray-500 mb-4 flex items-center space-x-2">
+        <a href="home.html" class="hover:text-blue-900">Home</a>
+        <span>/</span>
+        <a href="undergraduate.html" class="hover:text-blue-900">Undergraduate</a>
+        <span>/</span>
+        <span class="text-gray-800 font-semibold">Events & Masterclasses</span>
+      </nav>
+
+      <!-- Hub Header Title Block -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-gray-200 pb-6 mb-8 gap-4">
+        <div>
+          <span class="inline-block px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-blue-100 text-blue-900 mb-2">
+            Admissions Masterclasses & Panels
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            Undergraduate Webinars & In-Person Workshops
+          </h1>
+          <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl">
+            Join admissions directors and former Ivy League interviewers for live breakdown sessions on essay strategies, profile architecture, and test planning.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html#consultation-form" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-blue-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-blue-800 shadow-xs">
+            Free Profile Evaluation &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Filter / Category Tag Bar -->
+      <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-xs mb-8">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar text-xs font-semibold whitespace-nowrap">
+            <span class="text-gray-500 font-bold uppercase text-[11px] pr-1">Format:</span>
+            <button class="px-3 py-1.5 rounded-md bg-blue-900 text-white shadow-xs">All Events</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Online Webinars</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">In-Person Workshops</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Parent Roundtables</button>
+          </div>
+          <div class="text-xs text-gray-500">Showing <strong>4</strong> Upcoming Sessions</div>
+        </div>
+      </div>
+
+      <!-- 3-Col Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        
+        <!-- Event 1 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-red-100 text-red-900 text-xs font-bold uppercase animate-pulse">Live Webinar</span>
+              <span class="text-xs text-blue-900 font-bold">Oct 14, 2026 &bull; 6:00 PM IST</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Demystifying US College Admissions for Class 9–11 Students
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              A comprehensive blueprint on how holistic committees evaluate leadership spikes, academic rigor in IB/CBSE, and authentic personal essays.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-500 border-t border-gray-100 pt-3">
+              <div><strong>Speakers:</strong> Senior UG Admissions Directors</div>
+              <div><strong>Format:</strong> Zoom Interactive Q&A (60 Mins)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-emerald-600 font-semibold">Free Registration</span>
+            <a href="contact.html#consultation-form" class="px-3.5 py-1.5 rounded bg-blue-900 text-white text-xs font-bold hover:bg-blue-800">
+              Register Free &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-blue-100 text-blue-900 text-xs font-bold uppercase">In-Person Workshop</span>
+              <span class="text-xs text-blue-900 font-bold">Oct 22, 2026 &bull; Mumbai</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Common App Essay Masterclass: From Blank Page to Standout Draft
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Hands-on brainstorming clinic at our Nariman Point office. Reviewing winning essays that earned admits to Harvard, Yale, and Columbia.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-500 border-t border-gray-100 pt-3">
+              <div><strong>Location:</strong> OnCourse Executive Boardroom, Mumbai</div>
+              <div><strong>Cohort:</strong> Class 11 & 12 Candidates (Seats Capped at 15)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-amber-700 font-semibold">Limited Seats</span>
+            <a href="contact.html#consultation-form" class="px-3.5 py-1.5 rounded bg-blue-900 text-white text-xs font-bold hover:bg-blue-800">
+              Reserve Seat &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-indigo-100 text-indigo-900 text-xs font-bold uppercase">UK Masterclass</span>
+              <span class="text-xs text-blue-900 font-bold">Nov 05, 2026 &bull; Virtual</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              The Oxbridge Tutorial Interview: What Tutors Actually Look For
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Led by Oxford & Cambridge alumni mentors. Mock problem-solving walkthroughs in Economics, Natural Sciences, and Law.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-500 border-t border-gray-100 pt-3">
+              <div><strong>Speakers:</strong> Oxbridge Alumni Specialists</div>
+              <div><strong>Format:</strong> Video Simulation & Breakout Rooms</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-emerald-600 font-semibold">Free Registration</span>
+            <a href="contact.html#consultation-form" class="px-3.5 py-1.5 rounded bg-blue-900 text-white text-xs font-bold hover:bg-blue-800">
+              Register Free &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-purple-100 text-purple-900 text-xs font-bold uppercase">Parent Panel</span>
+              <span class="text-xs text-blue-900 font-bold">Nov 18, 2026 &bull; Delhi</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Parent Admissions Forum: Financial Planning & Curricular Choices
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              An intimate session for parents of Class 8–10 students covering subject selection, tuition investments, and long-term mentorship.
+            </p>
+            <div class="space-y-1.5 text-xs text-gray-500 border-t border-gray-100 pt-3">
+              <div><strong>Location:</strong> Connaught Place Center, New Delhi</div>
+              <div><strong>Host:</strong> Managing Director & Senior Strategy Board</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-emerald-600 font-semibold">Complimentary</span>
+            <a href="contact.html#consultation-form" class="px-3.5 py-1.5 rounded bg-blue-900 text-white text-xs font-bold hover:bg-blue-800">
+              Register Free &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-xs">
+      <p>&copy; 2026 OnCourse Global. Undergraduate Events & Masterclasses.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/wireframe.js"></script>
+</body>
+</html>

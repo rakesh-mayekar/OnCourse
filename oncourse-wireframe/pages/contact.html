@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Global Offices | OnCourse Global Admissions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- ================= GLOBAL HEADER ================= -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center space-x-3">
+          <a href="home.html" class="flex items-center space-x-2.5 group">
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm">OG</div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-gray-900 block leading-tight">OnCourse</span>
+              <span class="text-xs uppercase tracking-widest text-blue-800 font-semibold block">Global Admissions</span>
+            </div>
+          </a>
+          <span class="hidden md:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 border border-gray-300">
+            Contact & Advisory
+          </span>
+        </div>
+        <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium text-gray-700">
+          <a href="about.html" class="hover:text-blue-900 py-1">About Us</a>
+          <a href="undergraduate.html" class="hover:text-blue-900 py-1">Undergraduate</a>
+          <a href="masters.html" class="hover:text-blue-900 py-1">Master's</a>
+          <a href="mba.html" class="hover:text-blue-900 py-1">MBA</a>
+          <a href="test-prep.html" class="hover:text-blue-900 py-1">Test Prep</a>
+          <a href="contact.html" class="text-blue-900 font-bold border-b-2 border-blue-900 py-1">Contact Us</a>
+          <a href="careers.html" class="px-3.5 py-1.5 rounded-md border border-blue-800 text-blue-900 hover:bg-blue-50 font-semibold transition-all text-xs uppercase tracking-wider">
+            Join Our Team
+          </a>
+          <a href="#consultation-form" class="px-4 py-2 rounded-md bg-blue-900 text-white hover:bg-blue-800 font-semibold shadow-xs transition-all text-sm">
+            Book a Consultation
+          </a>
+        </nav>
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold">Book</a>
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Toggle Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav-drawer" class="hidden lg:hidden border-t border-gray-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <div class="grid grid-cols-1 gap-2 text-base font-medium text-gray-800">
+        <a href="about.html" class="px-3 py-2 rounded-md hover:bg-gray-50">About Us</a>
+        <a href="undergraduate.html" class="px-3 py-2 rounded-md hover:bg-gray-50">Undergraduate (Class 8–12)</a>
+        <a href="masters.html" class="px-3 py-2 rounded-md hover:bg-gray-50">Master's Programs</a>
+        <a href="mba.html" class="px-3 py-2 rounded-md hover:bg-gray-50">MBA Advisory</a>
+        <a href="test-prep.html" class="px-3 py-2 rounded-md hover:bg-gray-50">Test Prep & Transfer</a>
+        <a href="contact.html" class="px-3 py-2 rounded-md bg-blue-50 text-blue-900 font-bold">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- PAGE HERO BANNER -->
+    <section class="bg-blue-950 text-white py-12 lg:py-16 border-b border-blue-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-blue-900 text-blue-200 border border-blue-800 mb-3">
+          Global Admissions Advisory Network
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+          Connect with OnCourse Global
+        </h1>
+        <p class="text-sm sm:text-base text-blue-200 mt-3 max-w-2xl mx-auto leading-relaxed">
+          Reach our senior admissions directors across Mumbai, New Delhi, Gurgaon, and Dubai, or schedule a secure virtual strategy session worldwide.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1 & 2: GET IN TOUCH + CONSULTATION FORM -->
+    <section id="consultation-form" class="py-14 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Left Col: Get in Touch & Quick Channels -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-blue-800">Direct Communication</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">Get in Touch</h2>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed">
+                Whether you have early questions about Class 8–10 profile building, urgent Class 12 deadlines, or executive MBA positioning, our admissions directors respond within 24 hours.
+              </p>
+            </div>
+
+            <!-- Fast Contact Cards -->
+            <div class="space-y-3">
+              
+              <!-- WhatsApp Link Placeholder -->
+              <a href="https://wa.me/placeholder" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 rounded-xl border border-emerald-200 bg-emerald-50/50 hover:bg-emerald-50 transition-colors group">
+                <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-lg">
+                  💬
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-gray-900 group-hover:text-emerald-800">Chat via WhatsApp (Quick Enquiry)</h4>
+                  <p class="text-xs text-gray-600">+91 98200 00000 &bull; Instant Advisory Route</p>
+                </div>
+              </a>
+
+              <!-- Central Telephone -->
+              <div class="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-gray-50">
+                <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg">
+                  📞
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-gray-900">Direct Telephone Desk</h4>
+                  <p class="text-xs text-gray-600">+91 (022) 6123 4567 / +971 4 123 4567</p>
+                </div>
+              </div>
+
+              <!-- Official Admissions Desk -->
+              <div class="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-gray-50">
+                <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg">
+                  ✉️
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-gray-900">Admissions & Strategy Inbox</h4>
+                  <p class="text-xs text-gray-600">admissions@oncourseglobal.com</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100 text-xs text-blue-950 space-y-2">
+              <div class="font-bold flex items-center gap-1.5 text-blue-900">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                Guaranteed Response Window
+              </div>
+              <p class="text-gray-600 leading-normal">
+                Every consultation enquiry is reviewed by a Senior Director before scheduling to ensure tailored advisor pairing.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Col: Embedded Segment-Aware Lead Form -->
+          <div class="lg:col-span-7">
+            
+            <div id="lead-form-container" class="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 sm:p-8">
+              <div class="mb-6">
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 mb-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  Admissions Evaluation Form
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900">Request a Strategic Consultation</h3>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">
+                  Select your program interest below to customize your diagnostic review.
+                </p>
+              </div>
+
+              <!-- FORM ELEMENT WITH DYNAMIC DATA-SEGMENT SWITCHING -->
+              <form id="oncourse-lead-form" class="space-y-4" data-segment="undergraduate">
+                
+                <!-- Segment Selector Dropdown -->
+                <div>
+                  <label for="form-segment-selector" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">
+                    Your Area of Interest *
+                  </label>
+                  <select id="form-segment-selector" name="segment" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 bg-gray-50 focus:bg-white text-sm text-gray-800 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition-all font-medium">
+                    <option value="undergraduate" selected>Undergraduate Admissions (Class 8–12)</option>
+                    <option value="masters">Master's & Postgraduate Programs</option>
+                    <option value="mba">MBA & Executive Degrees</option>
+                    <option value="test-prep">Test Prep (SAT / ACT / GRE / GMAT)</option>
+                    <option value="parents">Parents / Family Advisory</option>
+                  </select>
+                </div>
+
+                <!-- Common Row 1: Student & Parent Name -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="applicant_name" class="block text-xs font-semibold text-gray-700 mb-1">
+                      Applicant Name *
+                    </label>
+                    <input type="text" id="applicant_name" name="applicant_name" required placeholder="e.g. Aarav Sharma" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-blue-600">
+                  </div>
+                  <div>
+                    <label for="parent_name" class="block text-xs font-semibold text-gray-700 mb-1">
+                      Parent / Guardian Name (Optional)
+                    </label>
+                    <input type="text" id="parent_name" name="parent_name" placeholder="e.g. Vikram Sharma" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-blue-600">
+                  </div>
+                </div>
+
+                <!-- Common Row 2: Email & Phone / WhatsApp -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact_email" class="block text-xs font-semibold text-gray-700 mb-1">
+                      Email Address *
+                    </label>
+                    <input type="email" id="contact_email" name="email" required placeholder="name@example.com" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-blue-600">
+                  </div>
+                  <div>
+                    <label for="contact_phone" class="block text-xs font-semibold text-gray-700 mb-1">
+                      Phone / WhatsApp Number *
+                    </label>
+                    <input type="tel" id="contact_phone" name="phone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-blue-600">
+                  </div>
+                </div>
+
+                <!-- DYNAMIC SECTION A: Undergraduate Specific Fields -->
+                <div id="segment-fields-undergraduate" class="p-4 rounded-lg bg-blue-50/60 border border-blue-100 space-y-3">
+                  <div class="text-xs font-bold text-blue-900 uppercase tracking-wide flex items-center gap-1.5">
+                    <span>🎓</span>
+                    Undergraduate Profile Context (Class 8 to 12)
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label for="ug_grade" class="block text-xs font-medium text-gray-700 mb-1">Current Grade / Class</label>
+                      <select id="ug_grade" name="ug_grade" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="class-8">Class 8 (Early Foundation)</option>
+                        <option value="class-9">Class 9 (Early Exploration)</option>
+                        <option value="class-10">Class 10 (Curriculum & Pre-IB)</option>
+                        <option value="class-11" selected>Class 11 (Critical Profile Spike)</option>
+                        <option value="class-12">Class 12 (Active Application Cycle)</option>
+                        <option value="gap-year">Gap Year / Transfer</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="ug_curriculum" class="block text-xs font-medium text-gray-700 mb-1">Curriculum Board</label>
+                      <select id="ug_curriculum" name="ug_curriculum" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="ib">IB Diploma (IBDP)</option>
+                        <option value="cambridge">Cambridge (IGCSE / A-Levels)</option>
+                        <option value="cbse">CBSE</option>
+                        <option value="icse">ICSE / ISC</option>
+                        <option value="us-high-school">US High School / AP</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- DYNAMIC SECTION B: MBA & Master's Specific Fields -->
+                <div id="segment-fields-pg-mba" class="hidden p-4 rounded-lg bg-amber-50/60 border border-amber-200 space-y-3">
+                  <div class="text-xs font-bold text-amber-900 uppercase tracking-wide flex items-center gap-1.5">
+                    <span>💼</span>
+                    MBA & Graduate Professional Credentials
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label for="gmat_gre_status" class="block text-xs font-medium text-gray-700 mb-1">GMAT / GRE Score Status *</label>
+                      <select id="gmat_gre_status" name="gmat_gre_status" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="taken-720-plus">GMAT 720+ / GRE 325+ (Taken)</option>
+                        <option value="taken-650-710">GMAT 650–710 / GRE 315–324 (Taken)</option>
+                        <option value="preparing">Currently Preparing / Test Date Scheduled</option>
+                        <option value="seeking-waiver">Seeking Test Waiver / EA</option>
+                        <option value="not-started">Have Not Started Test Prep</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="work_experience" class="block text-xs font-medium text-gray-700 mb-1">Full-Time Work Experience *</label>
+                      <select id="work_experience" name="work_experience" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="under-2">Under 2 Years</option>
+                        <option value="2-4" selected>2–4 Years</option>
+                        <option value="5-7">5–7 Years</option>
+                        <option value="8-plus">8+ Years (Executive MBA)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- DYNAMIC SECTION C: Test Prep Specific Fields -->
+                <div id="segment-fields-testprep" class="hidden p-4 rounded-lg bg-emerald-50/60 border border-emerald-200 space-y-3">
+                  <div class="text-xs font-bold text-emerald-900 uppercase tracking-wide flex items-center gap-1.5">
+                    <span>📊</span>
+                    Target Exam Diagnostic
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label for="target_exam" class="block text-xs font-medium text-gray-700 mb-1">Target Exam</label>
+                      <select id="target_exam" name="target_exam" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="digital-sat">Digital SAT (Undergraduate)</option>
+                        <option value="act">ACT (Undergraduate)</option>
+                        <option value="gmat-focus">GMAT Focus Edition (MBA)</option>
+                        <option value="gre">GRE General (Master's / MBA)</option>
+                        <option value="transfer">Transfer Admissions Advisory</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="exam_timeline" class="block text-xs font-medium text-gray-700 mb-1">Planned Test Date</label>
+                      <select id="exam_timeline" name="exam_timeline" class="w-full px-3 py-2 rounded border border-gray-300 text-xs bg-white">
+                        <option value="next-3-months">Next 1–3 Months</option>
+                        <option value="3-6-months" selected>3–6 Months</option>
+                        <option value="6-plus-months">6+ Months</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Preferred Office Hub -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="preferred_office" class="block text-xs font-semibold text-gray-700 mb-1">Preferred Office Hub</label>
+                    <select id="preferred_office" name="office" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-xs text-gray-800 bg-white">
+                      <option value="mumbai">Mumbai (Nariman Point / Bandra)</option>
+                      <option value="delhi">New Delhi (Connaught Place)</option>
+                      <option value="gurgaon">Gurgaon (Cyber City)</option>
+                      <option value="dubai">Dubai (DIFC / Downtown)</option>
+                      <option value="online" selected>Online / Virtual Consultation</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="target_intake" class="block text-xs font-semibold text-gray-700 mb-1">Target Intake Year</label>
+                    <select id="target_intake" name="target_intake" class="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-xs text-gray-800 bg-white">
+                      <option value="fall-2027">Fall 2027</option>
+                      <option value="fall-2028" selected>Fall 2028</option>
+                      <option value="fall-2029-beyond">Fall 2029 or Beyond</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="pt-2">
+                  <button type="submit" class="w-full py-3 px-6 rounded-lg bg-blue-900 hover:bg-blue-800 text-white font-bold text-sm shadow-md transition-all">
+                    Confirm Consultation Request
+                  </button>
+                  <p class="text-center text-xs text-gray-500 mt-2">
+                    Confidential evaluation. An OnCourse Admissions Director will respond within 24 hours.
+                  </p>
+                </div>
+
+              </form>
+
+              <!-- Success State -->
+              <div id="form-success-message" class="hidden text-center py-8 px-4">
+                <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-1">Consultation Request Received</h4>
+                <p class="text-sm text-gray-600 max-w-md mx-auto mb-4">
+                  Thank you! Your profile details have been routed to our Senior Admissions Strategist. A dedicated mentor will reach out within 24 business hours to schedule your diagnostic session.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: VISIT US (4 GLOBAL OFFICES WITH MAP PLACEHOLDERS) -->
+    <section id="offices" class="py-16 bg-gray-100 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-800">Visit Us</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">Our Global Admissions Hubs</h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Schedule an in-person diagnostic meeting with our senior advisory team at any of our flagship centers.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Office 1: Mumbai -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="wireframe-placeholder h-36 flex-col text-center">
+                <span class="text-xl mb-1">📍</span>
+                <p class="font-bold text-xs text-gray-700">[MAP PLACEHOLDER: Mumbai HQ]</p>
+                <p class="text-[10px] text-gray-500">Nariman Point / Marine Drive</p>
+              </div>
+              <div class="p-5">
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-900 text-[10px] font-bold uppercase">Headquarters</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">Mumbai (South & Suburbs)</h3>
+                <p class="text-xs text-gray-600 mt-2">
+                  Mittal Chambers, Nariman Point & Linking Road, Bandra West, Mumbai, MH 400021
+                </p>
+                <div class="mt-3 text-xs text-gray-500 space-y-1">
+                  <div><strong>Phone:</strong> +91 (022) 6123 4567</div>
+                  <div><strong>Hours:</strong> Mon–Sat, 10:00 AM – 7:00 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="#consultation-form" class="w-full text-center block px-3 py-2 rounded border border-blue-900 text-blue-900 text-xs font-bold hover:bg-blue-50">
+                Book Visit in Mumbai
+              </a>
+            </div>
+          </div>
+
+          <!-- Office 2: New Delhi -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="wireframe-placeholder h-36 flex-col text-center">
+                <span class="text-xl mb-1">📍</span>
+                <p class="font-bold text-xs text-gray-700">[MAP PLACEHOLDER: New Delhi]</p>
+                <p class="text-[10px] text-gray-500">Barakhamba Road / CP</p>
+              </div>
+              <div class="p-5">
+                <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-800 text-[10px] font-bold uppercase">Regional Hub</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">New Delhi</h3>
+                <p class="text-xs text-gray-600 mt-2">
+                  Statesman House, Barakhamba Road, Connaught Place, New Delhi, DL 110001
+                </p>
+                <div class="mt-3 text-xs text-gray-500 space-y-1">
+                  <div><strong>Phone:</strong> +91 (011) 4567 8901</div>
+                  <div><strong>Hours:</strong> Mon–Sat, 10:00 AM – 7:00 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="#consultation-form" class="w-full text-center block px-3 py-2 rounded border border-blue-900 text-blue-900 text-xs font-bold hover:bg-blue-50">
+                Book Visit in Delhi
+              </a>
+            </div>
+          </div>
+
+          <!-- Office 3: Gurgaon -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="wireframe-placeholder h-36 flex-col text-center">
+                <span class="text-xl mb-1">📍</span>
+                <p class="font-bold text-xs text-gray-700">[MAP PLACEHOLDER: Gurgaon]</p>
+                <p class="text-[10px] text-gray-500">DLF Cyber City / Golf Course Rd</p>
+              </div>
+              <div class="p-5">
+                <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-800 text-[10px] font-bold uppercase">NCR Center</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">Gurgaon</h3>
+                <p class="text-xs text-gray-600 mt-2">
+                  Building 10, DLF Cyber City & Two Horizon Center, Golf Course Road, Gurgaon 122002
+                </p>
+                <div class="mt-3 text-xs text-gray-500 space-y-1">
+                  <div><strong>Phone:</strong> +91 (0124) 478 9123</div>
+                  <div><strong>Hours:</strong> Mon–Sat, 10:00 AM – 7:00 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="#consultation-form" class="w-full text-center block px-3 py-2 rounded border border-blue-900 text-blue-900 text-xs font-bold hover:bg-blue-50">
+                Book Visit in Gurgaon
+              </a>
+            </div>
+          </div>
+
+          <!-- Office 4: Dubai -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="wireframe-placeholder h-36 flex-col text-center">
+                <span class="text-xl mb-1">📍</span>
+                <p class="font-bold text-xs text-gray-700">[MAP PLACEHOLDER: Dubai DIFC]</p>
+                <p class="text-[10px] text-gray-500">Gate Precinct / Downtown</p>
+              </div>
+              <div class="p-5">
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 text-[10px] font-bold uppercase">International Hub</span>
+                <h3 class="text-base font-bold text-gray-900 mt-1">Dubai (UAE)</h3>
+                <p class="text-xs text-gray-600 mt-2">
+                  Gate Precinct 4, DIFC & Business Bay Executive Towers, Dubai, United Arab Emirates
+                </p>
+                <div class="mt-3 text-xs text-gray-500 space-y-1">
+                  <div><strong>Phone:</strong> +971 4 123 4567</div>
+                  <div><strong>Hours:</strong> Sun–Thu, 9:00 AM – 6:00 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="#consultation-form" class="w-full text-center block px-3 py-2 rounded border border-blue-900 text-blue-900 text-xs font-bold hover:bg-blue-50">
+                Book Visit in Dubai
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: FREQUENTLY ASKED QUESTIONS (ACCORDION COMPONENT WITH VANILLA JS) -->
+    <section id="faqs" class="py-16 bg-white border-b border-gray-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-800">Frequently Asked Questions</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">
+            Answers to Common Admissions Questions
+          </h2>
+          <p class="text-xs sm:text-sm text-gray-600 mt-2">
+            Details on our mentorship pairing, timelines, diagnostic reviews, and consultation process.
+          </p>
+        </div>
+
+        <!-- ACCORDION ITEMS (Handled by initFAQAccordion in wireframe.js) -->
+        <div class="space-y-4">
+          
+          <!-- Accordion 1 -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden shadow-xs">
+            <button type="button" class="faq-accordion-btn w-full p-5 text-left bg-gray-50 hover:bg-gray-100 font-bold text-sm text-gray-900 flex items-center justify-between transition-colors" aria-expanded="true">
+              <span>When is the best time for a student to start working with OnCourse?</span>
+              <svg class="faq-icon w-5 h-5 text-gray-500 transform rotate-180 transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-panel p-5 bg-white border-t border-gray-200 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              For undergraduate admissions, Class 8 to 10 is ideal to establish authentic academic curiosity, curriculum choices, and leadership spikes without last-minute stress. For MBA candidates, beginning 6 to 12 months before target Round 1 or 2 deadlines allows comprehensive GMAT optimization and recommender strategy.
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden shadow-xs">
+            <button type="button" class="faq-accordion-btn w-full p-5 text-left bg-gray-50 hover:bg-gray-100 font-bold text-sm text-gray-900 flex items-center justify-between transition-colors" aria-expanded="false">
+              <span>How does OnCourse pair students with mentors?</span>
+              <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-panel hidden p-5 bg-white border-t border-gray-200 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              We do not believe in random assignments. Mentor pairing is determined following an initial diagnostic assessment of the student's intended academic domain (STEM, Humanities, Business, Arts), target geographical jurisdictions (US, UK, Canada, Europe), and personality dynamics to ensure deep mutual trust and rapport.
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden shadow-xs">
+            <button type="button" class="faq-accordion-btn w-full p-5 text-left bg-gray-50 hover:bg-gray-100 font-bold text-sm text-gray-900 flex items-center justify-between transition-colors" aria-expanded="false">
+              <span>Can we consult OnCourse virtually if we are outside Mumbai, Delhi, or Dubai?</span>
+              <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-panel hidden p-5 bg-white border-t border-gray-200 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Yes. Over 40% of our global cohort works with us completely virtually across Singapore, London, New York, San Francisco, Bangalore, Hyderabad, and Kolkata via secure video and dedicated roadmap tracking software.
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="border border-gray-200 rounded-xl overflow-hidden shadow-xs">
+            <button type="button" class="faq-accordion-btn w-full p-5 text-left bg-gray-50 hover:bg-gray-100 font-bold text-sm text-gray-900 flex items-center justify-between transition-colors" aria-expanded="false">
+              <span>Does OnCourse offer standardized test preparation and diagnostics?</span>
+              <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-panel hidden p-5 bg-white border-t border-gray-200 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Yes. We have dedicated 99th percentile coaching faculty for the Digital SAT, ACT, GMAT Focus Edition, and GRE General. Every new student begins with a comprehensive diagnostic exam to benchmark their scoring baseline before any curriculum is assigned.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-xs">
+      <p>&copy; 2026 OnCourse Global. Contact & Global Offices.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/wireframe.js"></script>
+</body>
+</html>

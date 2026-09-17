@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnCourse Global — UX Wireframe Prototype Suite | Swara Studio & K Webmaker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .viewport-frame {
+      transition: width 0.3s ease, height 0.3s ease;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 flex flex-col h-screen overflow-hidden font-sans">
+
+  <!-- TOP APP BAR -->
+  <header class="bg-gray-950 border-b border-gray-800 px-4 sm:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-3 flex-shrink-0 z-50">
+    
+    <!-- Title & Brand -->
+    <div class="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-sm">
+          OG
+        </div>
+        <div>
+          <h1 class="text-sm font-bold text-white leading-tight">OnCourse Global &bull; Wireframe Suite</h1>
+          <p class="text-[10px] text-gray-400">Swara Studio &bull; Companion to K Webmaker SOW v1.0</p>
+        </div>
+      </div>
+      <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-950 text-emerald-300 border border-emerald-800">
+        Phase 1/2 Prototype
+      </span>
+    </div>
+
+    <!-- Controls: Page Selector + Viewport Switcher -->
+    <div class="flex items-center space-x-3 w-full md:w-auto justify-center overflow-x-auto py-1">
+      
+      <!-- Page Selector Dropdown -->
+      <div class="flex items-center space-x-1.5">
+        <label for="page-select" class="text-xs text-gray-400 hidden sm:inline">Page:</label>
+        <select id="page-select" class="bg-gray-800 border border-gray-700 text-xs text-gray-200 rounded-md px-3 py-1.5 focus:ring-1 focus:ring-blue-500 focus:outline-none">
+          <optgroup label="Core & Segment Overviews">
+            <option value="oncourse-wireframe/pages/home.html" selected>01. Homepage (home.html)</option>
+            <option value="oncourse-wireframe/pages/about.html">02. About Us (about.html)</option>
+            <option value="oncourse-wireframe/pages/undergraduate.html">03. Undergraduate Overview (Class 8–12)</option>
+            <option value="oncourse-wireframe/pages/masters.html">04. Master's Overview (masters.html)</option>
+            <option value="oncourse-wireframe/pages/mba.html">05. MBA Advisory Overview (mba.html)</option>
+            <option value="oncourse-wireframe/pages/test-prep.html">06. Test Prep & Transfer (test-prep.html)</option>
+          </optgroup>
+          <optgroup label="Undergraduate Content Hubs">
+            <option value="oncourse-wireframe/pages/undergraduate-program.html">07. UG Programs & Roadmaps</option>
+            <option value="oncourse-wireframe/pages/undergraduate-knowledge.html">08. UG Knowledge Centre</option>
+            <option value="oncourse-wireframe/pages/undergraduate-success.html">09. UG Success Stories</option>
+            <option value="oncourse-wireframe/pages/undergraduate-events.html">10. UG Events & Webinars</option>
+          </optgroup>
+          <optgroup label="MBA Content Hubs">
+            <option value="oncourse-wireframe/pages/mba-program.html">11. MBA Programs & Roadmaps</option>
+            <option value="oncourse-wireframe/pages/mba-knowledge.html">12. MBA Knowledge Centre</option>
+            <option value="oncourse-wireframe/pages/mba-success.html">13. MBA Success Stories</option>
+            <option value="oncourse-wireframe/pages/mba-events.html">14. MBA Events & Panels</option>
+          </optgroup>
+          <optgroup label="Contact & Careers">
+            <option value="oncourse-wireframe/pages/contact.html">15. Contact Us & Offices (contact.html)</option>
+            <option value="oncourse-wireframe/pages/careers.html">16. Careers & Culture (careers.html)</option>
+            <option value="oncourse-wireframe/pages/careers-openings.html">17. Careers Openings (careers-openings.html)</option>
+            <option value="oncourse-wireframe/pages/careers-apply.html">18. Careers Apply Form (careers-apply.html)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- Viewport Device Switcher -->
+      <div class="flex items-center bg-gray-800 rounded-md p-1 border border-gray-700 space-x-1">
+        <button id="view-mobile" type="button" title="Mobile (375px)" class="px-2.5 py-1 text-xs rounded text-gray-400 hover:text-white hover:bg-gray-700 transition-colors flex items-center gap-1">
+          <span>📱</span><span class="hidden sm:inline">375px</span>
+        </button>
+        <button id="view-tablet" type="button" title="Tablet (768px)" class="px-2.5 py-1 text-xs rounded text-gray-400 hover:text-white hover:bg-gray-700 transition-colors flex items-center gap-1">
+          <span>平板</span><span class="hidden sm:inline">768px</span>
+        </button>
+        <button id="view-desktop" type="button" title="Desktop (1280px)" class="px-2.5 py-1 text-xs rounded text-gray-400 hover:text-white hover:bg-gray-700 transition-colors flex items-center gap-1">
+          <span>💻</span><span class="hidden sm:inline">1280px</span>
+        </button>
+        <button id="view-full" type="button" title="Full Screen Responsive (100%)" class="px-2.5 py-1 text-xs rounded bg-blue-600 text-white font-bold transition-colors flex items-center gap-1">
+          <span>🖥️</span><span class="hidden sm:inline">100%</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Quick External Link -->
+    <div class="hidden lg:flex items-center space-x-2">
+      <a id="direct-link" href="oncourse-wireframe/pages/home.html" target="_blank" rel="noopener" class="text-xs px-3 py-1.5 rounded bg-gray-800 hover:bg-gray-700 text-blue-400 font-semibold flex items-center gap-1 border border-gray-700">
+        <span>Open Standalone</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+      </a>
+    </div>
+
+  </header>
+
+  <!-- WORKSPACE VIEWPORT STAGE -->
+  <main class="flex-grow bg-gray-900 flex items-center justify-center p-2 sm:p-4 overflow-hidden relative">
+    
+    <!-- IFRAME CONTAINER -->
+    <div id="frame-container" class="viewport-frame w-full h-full bg-white rounded-lg overflow-hidden border border-gray-800 flex flex-col">
+      <div id="frame-header" class="bg-gray-100 border-b border-gray-200 px-3 py-1 flex items-center justify-between text-[11px] text-gray-500 font-mono select-none">
+        <div class="flex items-center space-x-1.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+          <span id="frame-url-label" class="ml-2 text-gray-600 font-semibold truncate max-w-xs sm:max-w-md">oncourse-wireframe/pages/home.html</span>
+        </div>
+        <div id="viewport-dims-badge" class="text-gray-400">100% &bull; Fluid View</div>
+      </div>
+      <iframe id="preview-frame" src="oncourse-wireframe/pages/home.html" class="w-full flex-grow border-0"></iframe>
+    </div>
+
+  </main>
+
+  <!-- CONTROLLER SCRIPT -->
+  <script>
+    const pageSelect = document.getElementById('page-select');
+    const previewFrame = document.getElementById('preview-frame');
+    const directLink = document.getElementById('direct-link');
+    const frameContainer = document.getElementById('frame-container');
+    const frameUrlLabel = document.getElementById('frame-url-label');
+    const dimsBadge = document.getElementById('viewport-dims-badge');
+
+    const btnMobile = document.getElementById('view-mobile');
+    const btnTablet = document.getElementById('view-tablet');
+    const btnDesktop = document.getElementById('view-desktop');
+    const btnFull = document.getElementById('view-full');
+    const viewButtons = [btnMobile, btnTablet, btnDesktop, btnFull];
+
+    function setActiveBtn(activeBtn) {
+      viewButtons.forEach(b => {
+        b.classList.remove('bg-blue-600', 'text-white', 'font-bold');
+        b.classList.add('text-gray-400');
+      });
+      activeBtn.classList.add('bg-blue-600', 'text-white', 'font-bold');
+      activeBtn.classList.remove('text-gray-400');
+    }
+
+    pageSelect.addEventListener('change', (e) => {
+      const url = e.target.value;
+      previewFrame.src = url;
+      directLink.href = url;
+      frameUrlLabel.textContent = url;
+    });
+
+    btnMobile.addEventListener('click', () => {
+      frameContainer.style.width = '375px';
+      frameContainer.style.height = '667px';
+      dimsBadge.textContent = '375px × 667px (Mobile)';
+      setActiveBtn(btnMobile);
+    });
+
+    btnTablet.addEventListener('click', () => {
+      frameContainer.style.width = '768px';
+      frameContainer.style.height = '1024px';
+      dimsBadge.textContent = '768px × 1024px (Tablet)';
+      setActiveBtn(btnTablet);
+    });
+
+    btnDesktop.addEventListener('click', () => {
+      frameContainer.style.width = '1280px';
+      frameContainer.style.height = '100%';
+      dimsBadge.textContent = '1280px × 100% (Desktop)';
+      setActiveBtn(btnDesktop);
+    });
+
+    btnFull.addEventListener('click', () => {
+      frameContainer.style.width = '100%';
+      frameContainer.style.height = '100%';
+      dimsBadge.textContent = '100% Fluid View';
+      setActiveBtn(btnFull);
+    });
+  </script>
+</body>
+</html>

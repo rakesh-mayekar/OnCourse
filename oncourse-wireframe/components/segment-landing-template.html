@@ -1,0 +1,299 @@
+<!-- OnCourse Global Reusable Template: Segment Landing Template -->
+<!--
+  This template serves as the canonical architectural layout for:
+  1. About Us (pages/about.html)
+  2. Undergraduate Overview (pages/undergraduate.html)
+  3. Master's Overview (pages/masters.html)
+  4. MBA Overview (pages/mba.html)
+  5. Test Prep & Transfer (pages/test-prep.html)
+
+  Layout Structure:
+  - Global Header (components/header.html)
+  - Hero / Intro Banner (Headline, Subhead, Segment CTA, Video/Hero Wireframe Placeholder)
+  - Segment Sub-Navigation Tab Bar (Overview, Program, Knowledge Centre, Success Stories, Events)
+  - Trust / Proof Metrics Block (Admissions rate, scholarships, test scores)
+  - Core Pillars & Strategic Methodology (5 Recurring Themes)
+  - Featured Case Study / Video Diagnostic Wireframe Block
+  - Final Consultation CTA Band
+  - Global Footer (components/footer.html)
+  - Sticky Consultation CTA + Contextual Pop-up
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}} | OnCourse Global Admissions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- HEADER COMPONENT -->
+  {{HEADER_COMPONENT}}
+
+  <!-- SUB-NAVIGATION BAR (Segment Specific) -->
+  <nav class="bg-blue-950 text-white border-b border-blue-900 sticky top-20 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between overflow-x-auto hide-scrollbar py-3 space-x-6 text-xs sm:text-sm font-semibold whitespace-nowrap">
+        <div class="flex items-center space-x-6">
+          <a href="{{SUBNAV_OVERVIEW}}" class="text-amber-400 border-b-2 border-amber-400 pb-1">Overview</a>
+          <a href="{{SUBNAV_PROGRAM}}" class="text-gray-300 hover:text-white transition-colors pb-1">Program & Roadmaps</a>
+          <a href="{{SUBNAV_KNOWLEDGE}}" class="text-gray-300 hover:text-white transition-colors pb-1">Knowledge Centre</a>
+          <a href="{{SUBNAV_SUCCESS}}" class="text-gray-300 hover:text-white transition-colors pb-1">Success Stories</a>
+          <a href="{{SUBNAV_EVENTS}}" class="text-gray-300 hover:text-white transition-colors pb-1">Events & Webinars</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-2 text-xs text-blue-200">
+          <span>Admissions Cycle:</span>
+          <span class="px-2 py-0.5 rounded bg-blue-900 text-white font-mono">2027–2028</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+    
+    <!-- 1. HERO / INTRO BLOCK -->
+    <section class="bg-white border-b border-gray-200 py-12 lg:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200">
+              <span class="w-2 h-2 rounded-full bg-blue-700"></span>
+              {{HERO_BADGE}}
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+              {{HERO_HEADLINE}}
+            </h1>
+
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              {{HERO_SUBHEAD}}
+            </p>
+
+            <!-- Segment Actions -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <a href="contact.html#consultation-form" class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-blue-900 text-white font-bold text-sm hover:bg-blue-800 shadow-md transition-all text-center">
+                {{PRIMARY_CTA_LABEL}}
+              </a>
+              <a href="{{SUBNAV_PROGRAM}}" class="w-full sm:w-auto px-6 py-3.5 rounded-lg border border-gray-300 text-gray-700 font-semibold text-sm hover:bg-gray-50 transition-all text-center">
+                Explore Curriculum & Timelines &rarr;
+              </a>
+            </div>
+
+            <div class="pt-3 flex items-center justify-center lg:justify-start gap-6 text-xs text-gray-500 font-medium">
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                1-on-1 Senior Mentorship
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                In-Person & Virtual Offices
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Hero Media Placeholder -->
+          <div class="lg:col-span-5">
+            <div class="wireframe-placeholder rounded-2xl h-72 sm:h-96 flex-col justify-center text-center shadow-inner">
+              <span class="text-2xl mb-2">🎓</span>
+              <p class="font-bold text-gray-800 text-sm mb-1">{{HERO_MEDIA_TAG}}</p>
+              <p class="text-xs text-gray-500 max-w-xs">{{HERO_MEDIA_NOTE}}</p>
+              <span class="mt-4 px-3 py-1 bg-white/80 rounded border border-gray-300 text-[11px] text-gray-700 font-mono">
+                Wireframe Asset Block
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TRUST & PROOF METRICS BAR -->
+    <section class="bg-gray-100 border-b border-gray-200 py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-black text-blue-900">{{STAT_1_NUMBER}}</div>
+            <div class="text-xs font-semibold text-gray-600 mt-1 uppercase tracking-wider">{{STAT_1_LABEL}}</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-black text-blue-900">{{STAT_2_NUMBER}}</div>
+            <div class="text-xs font-semibold text-gray-600 mt-1 uppercase tracking-wider">{{STAT_2_LABEL}}</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-black text-blue-900">{{STAT_3_NUMBER}}</div>
+            <div class="text-xs font-semibold text-gray-600 mt-1 uppercase tracking-wider">{{STAT_3_LABEL}}</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-black text-blue-900">{{STAT_4_NUMBER}}</div>
+            <div class="text-xs font-semibold text-gray-600 mt-1 uppercase tracking-wider">{{STAT_4_LABEL}}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STRATEGIC ROADMAP & 5 RECURRING THEMES -->
+    <section class="py-16 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-800">The OnCourse Advantage</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">
+            5 Core Pillars Grounding Every Application
+          </h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Our admissions consulting framework integrates rigorous strategic architecture with authentic personal storytelling.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          
+          <!-- Pillar 1: Thought Leadership -->
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-blue-300 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-3">01</div>
+              <h3 class="font-bold text-sm text-gray-900 mb-1">Thought Leadership</h3>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Insights directly informed by institutional admissions data, Ivy League dean briefings, and policy shifts.
+              </p>
+            </div>
+            <span class="mt-4 text-[11px] font-semibold text-blue-800">Admissions Intelligence &rarr;</span>
+          </div>
+
+          <!-- Pillar 2: Personalised Mentorship -->
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-blue-300 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-3">02</div>
+              <h3 class="font-bold text-sm text-gray-900 mb-1">Mentorship</h3>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Dedicated senior strategist paired with each candidate for high-touch, empathetic, 1-on-1 journey steering.
+              </p>
+            </div>
+            <span class="mt-4 text-[11px] font-semibold text-blue-800">1-on-1 Guidance &rarr;</span>
+          </div>
+
+          <!-- Pillar 3: Deep Expertise -->
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-blue-300 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-3">03</div>
+              <h3 class="font-bold text-sm text-gray-900 mb-1">Deep Expertise</h3>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Over a decade of specialist experience across US Common App, UK UCAS, Canadian, and global business schools.
+              </p>
+            </div>
+            <span class="mt-4 text-[11px] font-semibold text-blue-800">Jurisdiction Knowledge &rarr;</span>
+          </div>
+
+          <!-- Pillar 4: Structured Methodology -->
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-blue-300 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-3">04</div>
+              <h3 class="font-bold text-sm text-gray-900 mb-1">Methodology</h3>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Phase-gated roadmap: Diagnostic profiling, extracurricular spikes, narrative drafting, and interview rehearsals.
+              </p>
+            </div>
+            <span class="mt-4 text-[11px] font-semibold text-blue-800">Milestone System &rarr;</span>
+          </div>
+
+          <!-- Pillar 5: Verified Outcomes -->
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 hover:border-blue-300 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold text-sm mb-3">05</div>
+              <h3 class="font-bold text-sm text-gray-900 mb-1">Verified Outcomes</h3>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Transparent admit track record with verified offers, Ivy League placements, and significant scholarship awards.
+              </p>
+            </div>
+            <span class="mt-4 text-[11px] font-semibold text-blue-800">Track Record &rarr;</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SEGMENT-SPECIFIC FEATURED WIREFRAME BLOCK -->
+    <section class="py-14 bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-900">{{DETAIL_BLOCK_TAG}}</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">{{DETAIL_BLOCK_TITLE}}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{{DETAIL_BLOCK_DESC}}</p>
+            
+            <div class="space-y-2.5 pt-2">
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-200">
+                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
+                <p class="text-xs text-gray-700 leading-normal">{{POINT_1_TEXT}}</p>
+              </div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-200">
+                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
+                <p class="text-xs text-gray-700 leading-normal">{{POINT_2_TEXT}}</p>
+              </div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-200">
+                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
+                <p class="text-xs text-gray-700 leading-normal">{{POINT_3_TEXT}}</p>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <a href="{{SUBNAV_SUCCESS}}" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-blue-700">
+                Read Verified Admit Case Studies &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="wireframe-placeholder rounded-2xl h-80 flex-col text-center">
+              <span class="text-3xl mb-2">📋</span>
+              <p class="font-bold text-sm text-gray-800">[DIAGRAM PLACEHOLDER: Strategic Admissions Roadmap & Milestones]</p>
+              <p class="text-xs text-gray-500 mt-1 max-w-sm">
+                Shows 4-phase progression: Diagnostic Assessment &rarr; Narrative & Extracurricular Spike &rarr; University Selection & Essays &rarr; Interview Prep
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FINAL CONSULTATION CTA BAND -->
+    <section class="bg-blue-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          Ready to Begin Your Strategic Global Journey?
+        </h2>
+        <p class="text-sm sm:text-base text-blue-200 mt-2 max-w-2xl mx-auto">
+          Book a 1-on-1 profile evaluation with an admissions director in Mumbai, Delhi, Gurgaon, Dubai, or via secure video.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="contact.html#consultation-form" class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold text-sm uppercase tracking-wider shadow-md transition-all">
+            {{PRIMARY_CTA_LABEL}}
+          </a>
+          <a href="contact.html" class="w-full sm:w-auto px-6 py-3.5 rounded-lg border border-blue-400 text-white hover:bg-blue-800 font-semibold text-sm transition-all">
+            Find an Office Near You
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER COMPONENT -->
+  {{FOOTER_COMPONENT}}
+
+  <!-- STICKY CTA COMPONENT -->
+  {{STICKY_CTA_COMPONENT}}
+
+  <!-- CONTEXTUAL SEGMENT POPUP -->
+  {{SEGMENT_POPUP_COMPONENT}}
+
+  <script src="../assets/wireframe.js"></script>
+</body>
+</html>

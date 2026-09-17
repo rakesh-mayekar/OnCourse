@@ -1,0 +1,78 @@
+<!-- OnCourse Global Reusable Component: Contextual Segment Pop-up -->
+<!-- Non-intrusive bottom-right slide-in modal (data-segment aware: undergraduate vs mba vs general) -->
+<div id="segment-popup" data-segment="undergraduate" class="fixed bottom-20 right-4 sm:right-6 z-50 max-w-sm sm:max-w-md bg-white rounded-xl shadow-2xl border border-blue-200 p-5 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300">
+  
+  <!-- Close / Dismiss Button -->
+  <button id="segment-popup-close" type="button" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 p-1 rounded-md hover:bg-gray-100 transition-colors" aria-label="Close message">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+  </button>
+
+  <div class="flex items-start gap-3.5 pr-5">
+    
+    <!-- Accent Icon Badge -->
+    <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex-shrink-0 flex items-center justify-center font-bold text-sm shadow-xs">
+      <span class="popup-badge-ug">UG</span>
+      <span class="popup-badge-mba hidden">MBA</span>
+      <span class="popup-badge-gen hidden">OG</span>
+    </div>
+
+    <!-- Content Block -->
+    <div>
+      <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-900 mb-1">
+        Admissions Strategic Advisory
+      </span>
+
+      <!-- UG Messaging Variant -->
+      <div class="popup-content-ug">
+        <h4 class="text-sm font-bold text-gray-900 leading-snug">
+          Planning Early for Top Global Universities?
+        </h4>
+        <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+          Get our comprehensive Class 8–12 Ivy League & Global Admissions Roadmap and book a personalized 1-on-1 profile evaluation.
+        </p>
+        <div class="mt-3 flex items-center gap-2">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold hover:bg-blue-800 transition-colors">
+            Free Profile Evaluation
+          </a>
+          <a href="undergraduate-knowledge.html" class="px-2.5 py-1.5 text-xs font-medium text-blue-900 hover:underline">
+            View Roadmap &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- MBA Messaging Variant -->
+      <div class="popup-content-mba hidden">
+        <h4 class="text-sm font-bold text-gray-900 leading-snug">
+          Targeting Top 20 Global MBA Programs?
+        </h4>
+        <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+          Request an executive profile assessment covering M7 & European Top 10 target score benchmarks, essays, and merit scholarships.
+        </p>
+        <div class="mt-3 flex items-center gap-2">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold hover:bg-blue-800 transition-colors">
+            Scholarship Advisory
+          </a>
+          <a href="mba-knowledge.html" class="px-2.5 py-1.5 text-xs font-medium text-blue-900 hover:underline">
+            Read M7 Guide &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- General Messaging Variant -->
+      <div class="popup-content-gen hidden">
+        <h4 class="text-sm font-bold text-gray-900 leading-snug">
+          Speak with a Senior Admissions Mentor
+        </h4>
+        <p class="text-xs text-gray-600 mt-1 leading-relaxed">
+          Book an exploratory diagnostic session across Mumbai, Delhi, Gurgaon, or Dubai.
+        </p>
+        <div class="mt-3">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold hover:bg-blue-800 transition-colors">
+            Schedule Diagnostic
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

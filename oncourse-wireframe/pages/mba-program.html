@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBA Programs & Strategic Roadmaps | OnCourse Global</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center space-x-3">
+          <a href="home.html" class="flex items-center space-x-2.5 group">
+            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold text-lg tracking-wider shadow-sm">OG</div>
+            <div>
+              <span class="text-xl font-extrabold tracking-tight text-gray-900 block leading-tight">OnCourse</span>
+              <span class="text-xs uppercase tracking-widest text-blue-800 font-semibold block">Global Admissions</span>
+            </div>
+          </a>
+        </div>
+        <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium text-gray-700">
+          <a href="about.html" class="hover:text-blue-900 py-1">About Us</a>
+          <a href="undergraduate.html" class="hover:text-blue-900 py-1">Undergraduate</a>
+          <a href="masters.html" class="hover:text-blue-900 py-1">Master's</a>
+          <a href="mba.html" class="text-blue-900 font-bold border-b-2 border-blue-900 py-1">MBA</a>
+          <a href="test-prep.html" class="hover:text-blue-900 py-1">Test Prep</a>
+          <a href="contact.html" class="hover:text-blue-900 py-1">Contact Us</a>
+          <a href="careers.html" class="px-3.5 py-1.5 rounded-md border border-blue-800 text-blue-900 text-xs font-semibold uppercase">Join Our Team</a>
+          <a href="contact.html#consultation-form" class="px-4 py-2 rounded-md bg-blue-900 text-white text-sm font-semibold">Book a Consultation</a>
+        </nav>
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="contact.html#consultation-form" class="px-3 py-1.5 rounded-md bg-blue-900 text-white text-xs font-semibold">Book</a>
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-md text-gray-700 hover:bg-gray-100"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUB-NAV TABS -->
+  <nav class="bg-blue-950 text-white border-b border-blue-900 sticky top-20 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between overflow-x-auto hide-scrollbar py-3 space-x-6 text-xs sm:text-sm font-semibold whitespace-nowrap">
+        <div class="flex items-center space-x-6">
+          <a href="mba.html" class="text-gray-300 hover:text-white pb-1">Overview</a>
+          <a href="mba-program.html" class="text-amber-400 border-b-2 border-amber-400 pb-1">Program & Roadmaps</a>
+          <a href="mba-knowledge.html" class="text-gray-300 hover:text-white pb-1">Knowledge Centre</a>
+          <a href="mba-success.html" class="text-gray-300 hover:text-white pb-1">Success Stories</a>
+          <a href="mba-events.html" class="text-gray-300 hover:text-white pb-1">Events & Webinars</a>
+        </div>
+        <div class="hidden md:flex text-xs text-blue-200">MBA Tracks & Architecture</div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow py-10 lg:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumb -->
+      <nav class="text-xs text-gray-500 mb-4 flex items-center space-x-2">
+        <a href="home.html" class="hover:text-blue-900">Home</a>
+        <span>/</span>
+        <a href="mba.html" class="hover:text-blue-900">MBA</a>
+        <span>/</span>
+        <span class="text-gray-800 font-semibold">Programs & Roadmaps</span>
+      </nav>
+
+      <!-- Hub Header Title Block -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-gray-200 pb-6 mb-8 gap-4">
+        <div>
+          <span class="inline-block px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 mb-2">
+            Executive Admissions Tracks
+          </span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+            Global MBA Strategic Advisory Programs
+          </h1>
+          <p class="text-sm sm:text-base text-gray-600 mt-2 max-w-2xl">
+            Targeted preparation tracks tailored for mid-career executives, private equity professionals, consultants, and tech leaders aiming for M7 and top European business schools.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html#consultation-form" class="inline-flex items-center px-4 py-2.5 rounded-lg bg-blue-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-blue-800 shadow-xs">
+            Scholarship Advisory &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Filter / Category Tag Bar -->
+      <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-xs mb-8">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar text-xs font-semibold whitespace-nowrap">
+            <span class="text-gray-500 font-bold uppercase text-[11px] pr-1">Track:</span>
+            <button class="px-3 py-1.5 rounded-md bg-blue-900 text-white shadow-xs">All Programs</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">US M7 Elite</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">European Top 5 (INSEAD/LBS)</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">1-Year Accelerated</button>
+            <button class="px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200">Executive MBA (EMBA)</button>
+          </div>
+          <div class="text-xs text-gray-500">Showing <strong>4</strong> Strategic Tracks</div>
+        </div>
+      </div>
+
+      <!-- 3-Col Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        
+        <!-- Track 1: US M7 -->
+        <div class="bg-white rounded-xl border-2 border-amber-500/40 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow bg-amber-50/10">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-amber-100 text-amber-900 text-xs font-bold">Flagship Track</span>
+              <span class="text-xs text-gray-500">US 2-Year MBA</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">US M7 & Top 10 Executive Advisory</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Comprehensive Round 1 & Round 2 strategy for Harvard Business School, Stanford GSB, Wharton, Columbia, Booth, Kellogg, and MIT Sloan.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Narrative framing of leadership milestones</li>
+              <li>&bull; Recommender briefing & guidance</li>
+              <li>&bull; Wharton Team-Based Discussion (TBD) simulations</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Target: 3–6 Yrs Exp</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Track Blueprint &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Track 2: European Elite -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-blue-100 text-blue-900 text-xs font-bold">European Top 5</span>
+              <span class="text-xs text-gray-500">Global Focus</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">INSEAD & London Business School Track</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Focused on international mobility, cross-cultural team leadership, and multi-language aptitude for INSEAD (10-month) and LBS (15–21 month).
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; INSEAD multi-prompt motivational essays</li>
+              <li>&bull; Video interview and Kira Talent prep</li>
+              <li>&bull; International mobility justification</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Target: 4–8 Yrs Exp</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Track Blueprint &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Track 3: Executive MBA -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-purple-100 text-purple-900 text-xs font-bold">Senior Leadership</span>
+              <span class="text-xs text-gray-500">Modular / Weekend</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Global Executive MBA (EMBA) Strategy</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">
+              Designed for directors and vice presidents targeting Wharton EMBA, Columbia EMBA, TRIUM, and Oxford Executive MBA without stepping out of senior careers.
+            </p>
+            <ul class="space-y-1.5 text-xs text-gray-700 border-t border-gray-100 pt-3">
+              <li>&bull; Corporate sponsorship alignment</li>
+              <li>&bull; Executive Assessment (EA) score optimization</li>
+              <li>&bull; Senior organizational leadership CV synthesis</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs font-semibold text-gray-500">Target: 8+ Yrs Exp</span>
+            <a href="contact.html#consultation-form" class="text-xs font-bold text-blue-900 hover:underline">Track Blueprint &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-xs">
+      <p>&copy; 2026 OnCourse Global. MBA Programs & Roadmaps.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/wireframe.js"></script>
+</body>
+</html>
