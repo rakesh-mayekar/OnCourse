@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLeadFormSwitcher();
   initFAQAccordion();
   initCarouselSlider();
+  initHeroSlider();
 });
 
 // 1. Mobile Menu Toggle
@@ -216,7 +217,7 @@ function initCarouselSlider() {
       slide.classList.toggle('hidden', i !== index);
     });
     dots.forEach((dot, i) => {
-      dot.classList.toggle('bg-blue-600', i === index);
+      dot.classList.toggle('bg-black', i === index);
       dot.classList.toggle('bg-gray-300', i !== index);
     });
     currentIndex = index;
@@ -241,4 +242,83 @@ function initCarouselSlider() {
   });
 
   updateSlide(0);
+}
+
+// 7. Hero Master Slider (Homepage Video Replacement)
+function initHeroSlider() {
+  const slider = document.getElementById('hero-master-slider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slider-slide');
+  const prevBtn = document.getElementById('hero-slider-prev');
+  const nextBtn = document.getElementById('hero-slider-next');
+  const tabs = slider.querySelectorAll('.hero-slider-tab');
+  const dots = slider.querySelectorAll('.hero-slider-dot');
+  const counter = document.getElementById('hero-slide-counter');
+  let currentIndex = 0;
+  let autoplayTimer = null;
+
+  const updateSlide = (index) => {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('hidden', i !== index);
+    });
+    tabs.forEach((tab, i) => {
+      if (i === index) {
+        tab.classList.add('border-black', 'bg-white', 'text-black', 'font-bold');
+        tab.classList.remove('border-transparent', 'text-gray-500');
+      } else {
+        tab.classList.remove('border-black', 'bg-white', 'text-black', 'font-bold');
+        tab.classList.add('border-transparent', 'text-gray-500');
+      }
+    });
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('bg-black', 'w-6');
+        dot.classList.remove('bg-gray-300', 'w-2');
+      } else {
+        dot.classList.remove('bg-black', 'w-6');
+        dot.classList.add('bg-gray-300', 'w-2');
+      }
+    });
+    if (counter) {
+      counter.textContent = `0${index + 1} / 0${slides.length}`;
+    }
+    currentIndex = index;
+  };
+
+  const nextSlide = () => {
+    const newIndex = (currentIndex + 1) % slides.length;
+    updateSlide(newIndex);
+  };
+
+  const prevSlide = () => {
+    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide(newIndex);
+  };
+
+  if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetTimer(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => { updateSlide(i); resetTimer(); });
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { updateSlide(i); resetTimer(); });
+  });
+
+  const startTimer = () => {
+    autoplayTimer = setInterval(nextSlide, 5500);
+  };
+
+  const resetTimer = () => {
+    clearInterval(autoplayTimer);
+    startTimer();
+  };
+
+  slider.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+  slider.addEventListener('mouseleave', () => startTimer());
+
+  updateSlide(0);
+  startTimer();
 }

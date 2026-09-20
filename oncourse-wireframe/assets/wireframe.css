@@ -1,6 +1,13 @@
 /* OnCourse Global — UX Wireframe Styling System */
+/* STRICT BLACK AND WHITE / MONOCHROME WIREFRAME PALETTE */
 
-/* Wireframe Placeholder Visual Tokens */
+/* ================= 1. Accessibility Focus Ring ================= */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #000000 !important;
+  outline-offset: 2px !important;
+}
+
+/* ================= 2. Wireframe Placeholder Visual Tokens ================= */
 .wireframe-placeholder {
   background: repeating-linear-gradient(
     45deg,
@@ -24,16 +31,16 @@
 .wireframe-placeholder-dark {
   background: repeating-linear-gradient(
     45deg,
-    #1e293b,
-    #1e293b 10px,
-    #334155 10px,
-    #334155 20px
+    #171717,
+    #171717 10px,
+    #262626 10px,
+    #262626 20px
   );
-  border: 2px dashed #64748b;
+  border: 2px dashed #525252;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #94a3b8;
+  color: #a3a3a3;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.875rem;
   font-weight: 500;
@@ -60,8 +67,147 @@ html {
   scrollbar-width: none;
 }
 
-/* Accessibility focus ring */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
+/* ================= 3. BLACK & WHITE WIREFRAME COLOR OVERRIDES ================= */
+/* Enforce strict monochrome palette: Black (#000000, #111827), White (#ffffff), and Grays (#f9fafb, #f3f4f6, #e5e7eb, #d1d5db, #9ca3af, #4b5563) */
+
+/* Dark Backgrounds -> Black / Deep Charcoal */
+.bg-blue-950,
+.bg-blue-900,
+.bg-blue-800,
+.bg-blue-700 {
+  background-color: #0a0a0a !important;
+}
+
+.bg-blue-600,
+.bg-blue-500,
+.bg-amber-600,
+.bg-amber-500,
+.bg-emerald-600,
+.bg-emerald-500 {
+  background-color: #171717 !important;
+}
+
+/* Light / Pastel Backgrounds -> Crisp Light Grays */
+.bg-blue-200,
+.bg-blue-100,
+.bg-amber-100,
+.bg-emerald-100,
+.bg-indigo-100,
+.bg-purple-100,
+.bg-red-100 {
+  background-color: #f3f4f6 !important;
+}
+
+.bg-blue-50,
+.bg-amber-50,
+.bg-emerald-50 {
+  background-color: #f9fafb !important;
+}
+
+.bg-amber-400,
+.bg-emerald-400,
+.bg-cyan-400 {
+  background-color: #e5e7eb !important;
+}
+
+/* Text Colors -> Crisp Black / Dark Neutral Gray on Light Backgrounds */
+.text-blue-950,
+.text-blue-900,
+.text-blue-800,
+.text-blue-700,
+.text-amber-900,
+.text-amber-800,
+.text-amber-700,
+.text-emerald-900,
+.text-emerald-800,
+.text-emerald-700,
+.text-emerald-600,
+.text-indigo-900,
+.text-indigo-800,
+.text-purple-900,
+.text-red-900 {
+  color: #111827 !important;
+}
+
+/* Light Text on Dark Backgrounds -> Crisp White / Light Grays */
+.text-blue-100,
+.text-blue-200,
+.text-blue-300,
+.text-amber-300,
+.text-emerald-300 {
+  color: #d1d5db !important;
+}
+
+.text-blue-400 {
+  color: #9ca3af !important;
+}
+
+/* Active Amber Indicators -> High-Contrast Crisp White on Dark Subnav */
+.bg-blue-950 .text-amber-400,
+.bg-black .text-amber-400,
+nav .text-amber-400 {
+  color: #ffffff !important;
+}
+
+.bg-blue-950 .border-amber-400,
+.bg-black .border-amber-400,
+nav .border-amber-400 {
+  border-color: #ffffff !important;
+}
+
+/* Standalone Amber / Emerald Accent Text */
+.text-amber-400 {
+  color: #111827 !important;
+}
+
+/* Borders -> Clean Wireframe Grays and Blacks */
+.border-blue-900,
+.border-blue-800,
+.border-blue-700 {
+  border-color: #262626 !important;
+}
+
+.border-blue-600,
+.border-blue-500,
+.border-blue-400 {
+  border-color: #525252 !important;
+}
+
+.border-blue-300,
+.border-blue-200,
+.border-blue-100,
+.border-amber-200,
+.border-emerald-200 {
+  border-color: #e5e7eb !important;
+}
+
+.border-amber-400,
+.border-amber-500 {
+  border-color: #111827 !important;
+}
+
+/* Rings & Focus */
+.ring-blue-600,
+.ring-blue-500 {
+  --tw-ring-color: #000000 !important;
+}
+
+/* Hover States -> Wireframe Monochromes */
+.hover\:bg-blue-800:hover,
+.hover\:bg-blue-900:hover {
+  background-color: #262626 !important;
+}
+
+.hover\:bg-blue-50:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.hover\:text-blue-900:hover,
+.hover\:text-blue-800:hover,
+.group:hover .group-hover\:text-blue-900 {
+  color: #000000 !important;
+}
+
+.group:hover .group-hover\:bg-blue-800 {
+  background-color: #262626 !important;
 }
