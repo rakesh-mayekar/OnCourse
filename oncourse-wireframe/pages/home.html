@@ -268,471 +268,649 @@
 
   <main class="flex-grow">
 
-    <!-- ================= 1. HERO SECTION WITH SEGMENT SELECTOR ================= -->
-    <section class="bg-white border-b border-gray-200 py-12 lg:py-18">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ================= 1. TRUE MASTER HERO WITH INTEGRATED SLIDER ================= -->
+    <section id="master-hero-section" class="relative bg-white border-b border-gray-200 overflow-hidden">
+      
+      <!-- HERO MASTER SLIDER CONTAINER -->
+      <div id="hero-master-slider" class="relative">
         
-        <div class="text-center max-w-3xl mx-auto mb-8">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold bg-gray-50 text-black border border-gray-200 mb-4 shadow-2xs">
-            <span class="w-2 h-2 rounded-full bg-black animate-pulse"></span>
-            Admissions Consulting & Longitudinal Mentorship
-          </div>
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
-            Guiding Ambition to Global Admittance
-          </h1>
-          <p class="text-base sm:text-lg text-gray-600 mt-4 leading-relaxed">
-            Data-driven strategic mentorship for Class 8–12 students, Master's applicants, and MBA executives targeting the world's most selective institutions.
-          </p>
-        </div>
-
-        <!-- ================= MASTER HERO CAROUSEL / SLIDER (IMAGES WITH CONTENT) ================= -->
-        <div id="hero-master-slider" class="max-w-6xl mx-auto mb-14 bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden shadow-xl relative">
-          
-          <!-- Top Controller Bar -->
-          <div class="px-5 py-3 bg-white border-b border-gray-200 flex items-center justify-between">
-            <div class="flex items-center space-x-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-black animate-pulse"></span>
-              <span class="text-xs font-bold uppercase tracking-wider text-black">Admissions Focus & Strategic Pillars</span>
+        <!-- Master Hero Top Sub-Bar (Category Badge + Slider Controls) -->
+        <div class="border-b border-gray-200 bg-gray-50/80">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 shadow-2xs">
+              <span class="w-2 h-2 rounded-full bg-black animate-pulse"></span>
+              <span>Global Admissions Advisory &bull; 2027–2028 Admissions Cycle</span>
             </div>
             <div class="flex items-center space-x-3">
-              <span id="hero-slide-counter" class="font-mono text-xs font-bold text-gray-600 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">01 / 04</span>
+              <span id="hero-slide-counter" class="font-mono text-xs font-bold text-gray-700 bg-white px-2.5 py-1 rounded-md border border-gray-300">01 / 04</span>
               <div class="flex items-center space-x-1.5">
-                <button id="hero-slider-prev" type="button" class="w-7 h-7 rounded-full border border-gray-300 bg-white hover:bg-black hover:text-white flex items-center justify-center text-xs font-bold transition-colors cursor-pointer" aria-label="Previous Slide">
+                <button id="hero-slider-prev" type="button" class="w-8 h-8 rounded-full border border-gray-300 bg-white hover:bg-black hover:text-white flex items-center justify-center text-xs font-bold transition-all cursor-pointer shadow-2xs" aria-label="Previous Slide">
                   ←
                 </button>
-                <button id="hero-slider-next" type="button" class="w-7 h-7 rounded-full border border-gray-300 bg-white hover:bg-black hover:text-white flex items-center justify-center text-xs font-bold transition-colors cursor-pointer" aria-label="Next Slide">
+                <button id="hero-slider-next" type="button" class="w-8 h-8 rounded-full border border-gray-300 bg-white hover:bg-black hover:text-white flex items-center justify-center text-xs font-bold transition-all cursor-pointer shadow-2xs" aria-label="Next Slide">
                   →
                 </button>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- SLIDE 1: Undergraduate (Class 8–12 Spikes) -->
-          <div class="hero-slider-slide p-6 sm:p-8 lg:p-10 transition-opacity duration-300">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- SLIDE 1: Undergraduate (Class 8–12 Longitudinal Spikes) -->
+        <div class="hero-slider-slide py-12 lg:py-18 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-opacity duration-300">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Content Column (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-bold bg-gray-100 text-black border border-gray-300">
+                <span>Pathway 01</span>
+                <span>&bull;</span>
+                <span>Class 8–12 Longitudinal Strategy</span>
+              </div>
               
-              <!-- Content Column (Left) -->
-              <div class="lg:col-span-6 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 shadow-2xs">
-                  <span class="w-2 h-2 rounded-full bg-black"></span>
-                  Pathway 01 &bull; Class 8–12 Admissions Mentorship
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
-                  Building Authentic Extracurricular Spikes for Ivy League & Oxbridge
-                </h3>
-                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Longitudinal mentorship spanning 2 to 4 years. We guide students to publish original research, lead impactful community initiatives, and author distinctive Common App & UCAS personal statements.
-                </p>
-
-                <!-- Data Points / Outcomes -->
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">28.6%</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Ivy/Top 20 Admit Rate (vs 4.1% Avg)</div>
-                  </div>
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">$14.2M+</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Cumulative Institutional Scholarships</div>
-                  </div>
-                </div>
-
-                <!-- Action CTAs -->
-                <div class="flex flex-wrap items-center gap-3 pt-2">
-                  <a href="undergraduate.html" class="px-5 py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm">
-                    Explore UG Programs &rarr;
-                  </a>
-                  <a href="contact.html#consultation-form" class="px-5 py-2.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 text-xs font-bold uppercase tracking-wider transition-all">
-                    Book UG Diagnostic
-                  </a>
-                </div>
-              </div>
-
-              <!-- Visual Image Column (Right) -->
-              <div class="lg:col-span-6">
-                <div class="wireframe-placeholder rounded-xl h-64 sm:h-80 flex-col justify-between text-left p-6 shadow-md border-2 border-gray-300 relative overflow-hidden bg-white">
-                  <div class="flex items-center justify-between w-full">
-                    <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
-                      Image Wireframe 16:10
-                    </span>
-                    <span class="text-[10px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
-                      800 × 500 px
-                    </span>
-                  </div>
-
-                  <!-- Central Wireframe Graphic / Illustration -->
-                  <div class="my-auto text-center py-4">
-                    <div class="w-14 h-14 rounded-full bg-gray-200 text-black flex items-center justify-center mx-auto mb-2 text-2xl font-black border border-gray-300">
-                      🏛️
-                    </div>
-                    <div class="font-bold text-gray-900 text-sm">
-                      [IMAGE: 1-on-1 Ivy League Admissions Mentorship Session]
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1 max-w-sm mx-auto">
-                      Photograph showcasing former Dean of Admissions reviewing student research portfolio, spike validation, and essay draft.
-                    </p>
-                  </div>
-
-                  <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[10px] text-gray-500 font-mono">
-                    <span>Target: Harvard &bull; Yale &bull; Princeton &bull; Oxford</span>
-                    <span>Stage: Longitudinal Spikes</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- SLIDE 2: MBA Advisory (M7 & Top European B-Schools) -->
-          <div class="hero-slider-slide p-6 sm:p-8 lg:p-10 transition-opacity duration-300 hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                Guiding Ambition to Ivy League & Oxbridge Admittance
+              </h1>
               
-              <!-- Content Column (Left) -->
-              <div class="lg:col-span-6 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 shadow-2xs">
-                  <span class="w-2 h-2 rounded-full bg-black"></span>
-                  Pathway 02 &bull; Executive & MBA Strategic Advisory
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
-                  Breaking Into M7 & European Top 10 Global Business Schools
-                </h3>
-                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Targeted positioning for early-career leaders and seasoned executives targeting Wharton, Harvard Business School, Stanford GSB, INSEAD, and London Business School.
-                </p>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Longitudinal mentorship spanning 2 to 4 years. We guide students to build authentic extracurricular spikes, publish original academic research, and author high-conviction Common App and UCAS personal statements.
+              </p>
 
-                <!-- Data Points / Outcomes -->
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">82%</div>
-                    <div class="text-[11px] text-gray-500 font-medium">M7 Interview Call-Up Rate</div>
-                  </div>
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">$48,500</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Average Merit Fellowship Award</div>
-                  </div>
+              <!-- High-Impact Numbers Highlights Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl">
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">28.6%</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Ivy Admit Rate</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">vs 4.1% Global Avg</div>
                 </div>
-
-                <!-- Action CTAs -->
-                <div class="flex flex-wrap items-center gap-3 pt-2">
-                  <a href="mba.html" class="px-5 py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm">
-                    Explore MBA Advisory &rarr;
-                  </a>
-                  <a href="mba-knowledge.html" class="px-5 py-2.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 text-xs font-bold uppercase tracking-wider transition-all">
-                    Download M7 Playbook
-                  </a>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">6.9x</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Odds Multiplier</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Top 20 Universities</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">$14.2M</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Scholarships</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Merit Aid Awarded</div>
                 </div>
               </div>
 
-              <!-- Visual Image Column (Right) -->
-              <div class="lg:col-span-6">
-                <div class="wireframe-placeholder rounded-xl h-64 sm:h-80 flex-col justify-between text-left p-6 shadow-md border-2 border-gray-300 relative overflow-hidden bg-white">
-                  <div class="flex items-center justify-between w-full">
-                    <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
-                      Image Wireframe 16:10
-                    </span>
-                    <span class="text-[10px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
-                      800 × 500 px
-                    </span>
-                  </div>
-
-                  <!-- Central Wireframe Graphic / Illustration -->
-                  <div class="my-auto text-center py-4">
-                    <div class="w-14 h-14 rounded-full bg-gray-200 text-black flex items-center justify-center mx-auto mb-2 text-2xl font-black border border-gray-300">
-                      📈
-                    </div>
-                    <div class="font-bold text-gray-900 text-sm">
-                      [IMAGE: MBA Career Pivot & Executive Resume Architecture]
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1 max-w-sm mx-auto">
-                      Visual photograph illustrating executive coaching session on leadership essays, recommender alignment, and Wharton TBD simulation.
-                    </p>
-                  </div>
-
-                  <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[10px] text-gray-500 font-mono">
-                    <span>Cohort: Wharton &bull; HBS &bull; Stanford GSB &bull; INSEAD</span>
-                    <span>Test: GMAT Focus 705+</span>
-                  </div>
-                </div>
+              <!-- Primary CTAs -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="contact.html#consultation-form" class="px-6 py-3.5 rounded-lg bg-black text-white hover:bg-gray-800 font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+                  <span>Book a Free Consultation</span>
+                  <span>&rarr;</span>
+                </a>
+                <a href="undergraduate.html" class="px-6 py-3.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 font-bold text-xs uppercase tracking-wider transition-all">
+                  Explore UG Programs
+                </a>
               </div>
-
             </div>
-          </div>
 
-          <!-- SLIDE 3: Master's (MS/MA STEM & Finance Degrees) -->
-          <div class="hero-slider-slide p-6 sm:p-8 lg:p-10 transition-opacity duration-300 hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Right Visual Image Column (5 cols) -->
+            <div class="lg:col-span-5">
+              <div class="wireframe-placeholder rounded-2xl h-80 sm:h-96 lg:h-[420px] flex-col justify-between text-left p-6 shadow-xl border-2 border-gray-300 relative overflow-hidden bg-white">
+                <div class="flex items-center justify-between w-full">
+                  <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
+                    Master Hero Visual &bull; 16:10
+                  </span>
+                  <span class="text-[10px] font-mono text-gray-600 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                    800 × 500 px
+                  </span>
+                </div>
+
+                <!-- Central Composition -->
+                <div class="my-auto text-center py-6">
+                  <div class="w-16 h-16 rounded-2xl bg-gray-100 text-black flex items-center justify-center mx-auto mb-3 text-3xl font-black border border-gray-300 shadow-xs">
+                    🏛️
+                  </div>
+                  <div class="font-black text-gray-900 text-base">
+                    [IMAGE: 1-on-1 Ivy League Admissions Mentorship Session]
+                  </div>
+                  <p class="text-xs text-gray-600 mt-1.5 max-w-sm mx-auto leading-relaxed">
+                    Senior Admissions Director guiding student profile evaluation, capstone research paper validation, and Common App personal narrative.
+                  </p>
+                </div>
+
+                <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[11px] text-gray-600 font-mono">
+                  <span>Target: Harvard &bull; Yale &bull; Princeton &bull; Oxford</span>
+                  <span class="font-bold text-black">Stage: Class 8–12 Spikes</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SLIDE 2: MBA & Executive Advisory (M7 & Top European B-Schools) -->
+        <div class="hero-slider-slide py-12 lg:py-18 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-opacity duration-300 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Content Column (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-bold bg-gray-100 text-black border border-gray-300">
+                <span>Pathway 02</span>
+                <span>&bull;</span>
+                <span>Executive & MBA Strategy (M7 & Top 10)</span>
+              </div>
               
-              <!-- Content Column (Left) -->
-              <div class="lg:col-span-6 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 shadow-2xs">
-                  <span class="w-2 h-2 rounded-full bg-black"></span>
-                  Pathway 03 &bull; Master's (MS/MA) STEM & Professional
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
-                  Securing High-Impact Research & STEM OPT Degrees Worldwide
-                </h3>
-                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Specialized admissions advisory for competitive Computer Science, AI/ML, Data Analytics, and Quantitative Finance programs with 3-year US STEM OPT extension alignment.
-                </p>
-
-                <!-- Data Points / Outcomes -->
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">88%</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Placement in Top 25 Global MS Programs</div>
-                  </div>
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">3 Years</div>
-                    <div class="text-[11px] text-gray-500 font-medium">US STEM OPT Work Authorization</div>
-                  </div>
-                </div>
-
-                <!-- Action CTAs -->
-                <div class="flex flex-wrap items-center gap-3 pt-2">
-                  <a href="masters.html" class="px-5 py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm">
-                    Explore Master's Hub &rarr;
-                  </a>
-                  <a href="contact.html#consultation-form" class="px-5 py-2.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 text-xs font-bold uppercase tracking-wider transition-all">
-                    Evaluate Profile
-                  </a>
-                </div>
-              </div>
-
-              <!-- Visual Image Column (Right) -->
-              <div class="lg:col-span-6">
-                <div class="wireframe-placeholder rounded-xl h-64 sm:h-80 flex-col justify-between text-left p-6 shadow-md border-2 border-gray-300 relative overflow-hidden bg-white">
-                  <div class="flex items-center justify-between w-full">
-                    <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
-                      Image Wireframe 16:10
-                    </span>
-                    <span class="text-[10px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
-                      800 × 500 px
-                    </span>
-                  </div>
-
-                  <!-- Central Wireframe Graphic / Illustration -->
-                  <div class="my-auto text-center py-4">
-                    <div class="w-14 h-14 rounded-full bg-gray-200 text-black flex items-center justify-center mx-auto mb-2 text-2xl font-black border border-gray-300">
-                      💻
-                    </div>
-                    <div class="font-bold text-gray-900 text-sm">
-                      [IMAGE: Graduate Research Lab & Technical SOP Architecture]
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1 max-w-sm mx-auto">
-                      Visual photograph showcasing applicant collaborating on research publication and faculty outreach strategy for CMU, Stanford & MIT.
-                    </p>
-                  </div>
-
-                  <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[10px] text-gray-500 font-mono">
-                    <span>Fields: AI/ML &bull; Robotics &bull; Quant Finance</span>
-                    <span>Grant: Institutional Aid</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- SLIDE 4: Verified Admit Records & Outcomes -->
-          <div class="hero-slider-slide p-6 sm:p-8 lg:p-10 transition-opacity duration-300 hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                Breaking Into M7 & European Top 10 Global Business Schools
+              </h2>
               
-              <!-- Content Column (Left) -->
-              <div class="lg:col-span-6 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 shadow-2xs">
-                  <span class="w-2 h-2 rounded-full bg-black"></span>
-                  Pathway 04 &bull; Verified 2024–2026 Admissions Results
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
-                  1,200+ Offers from Harvard, Stanford, Oxford, Cambridge & Wharton
-                </h3>
-                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Real stories of students transforming non-linear profiles into standout applications. Discover how personalized strategy consistently delivers verified results year after year.
-                </p>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Targeted admissions architecture for early-career high achievers and executive leaders targeting Wharton, Harvard Business School, Stanford GSB, INSEAD, and London Business School.
+              </p>
 
-                <!-- Data Points / Outcomes -->
-                <div class="grid grid-cols-2 gap-3 pt-1">
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">98%</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Admitted to Top 3 Choice Universities</div>
-                  </div>
-                  <div class="p-3 bg-white rounded-lg border border-gray-200">
-                    <div class="text-lg font-black text-black">15+ Years</div>
-                    <div class="text-[11px] text-gray-500 font-medium">Industry-Leading Advisory Legacy</div>
-                  </div>
+              <!-- High-Impact Numbers Highlights Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl">
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">82%</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">M7 Interview Rate</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">vs 21% General Pool</div>
                 </div>
-
-                <!-- Action CTAs -->
-                <div class="flex flex-wrap items-center gap-3 pt-2">
-                  <a href="undergraduate-success.html" class="px-5 py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm">
-                    Read Admit Case Studies &rarr;
-                  </a>
-                  <a href="about.html#team" class="px-5 py-2.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 text-xs font-bold uppercase tracking-wider transition-all">
-                    Meet Our Mentors
-                  </a>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">705+</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">GMAT Focus Target</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Median M7 Benchmark</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">$48.5K</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Avg Fellowship</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Merit Grant Support</div>
                 </div>
               </div>
 
-              <!-- Visual Image Column (Right) -->
-              <div class="lg:col-span-6">
-                <div class="wireframe-placeholder rounded-xl h-64 sm:h-80 flex-col justify-between text-left p-6 shadow-md border-2 border-gray-300 relative overflow-hidden bg-white">
-                  <div class="flex items-center justify-between w-full">
-                    <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
-                      Image Wireframe 16:10
-                    </span>
-                    <span class="text-[10px] font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
-                      800 × 500 px
-                    </span>
-                  </div>
-
-                  <!-- Central Wireframe Graphic / Illustration -->
-                  <div class="my-auto text-center py-4">
-                    <div class="w-14 h-14 rounded-full bg-gray-200 text-black flex items-center justify-center mx-auto mb-2 text-2xl font-black border border-gray-300">
-                      🏆
-                    </div>
-                    <div class="font-bold text-gray-900 text-sm">
-                      [IMAGE: Verified Admit Letter Showcase & Student Success]
-                    </div>
-                    <p class="text-xs text-gray-500 mt-1 max-w-sm mx-auto">
-                      Visual photograph showing student celebration, official acceptance notifications from Harvard, Columbia & Oxford, and mentor testimonial.
-                    </p>
-                  </div>
-
-                  <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[10px] text-gray-500 font-mono">
-                    <span>Outcome: Verified Admittance</span>
-                    <span>Audit: 100% Validated</span>
-                  </div>
-                </div>
+              <!-- Primary CTAs -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="contact.html#consultation-form" class="px-6 py-3.5 rounded-lg bg-black text-white hover:bg-gray-800 font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+                  <span>Schedule MBA Diagnostic</span>
+                  <span>&rarr;</span>
+                </a>
+                <a href="mba.html" class="px-6 py-3.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 font-bold text-xs uppercase tracking-wider transition-all">
+                  Explore MBA Roadmaps
+                </a>
               </div>
-
             </div>
+
+            <!-- Right Visual Image Column (5 cols) -->
+            <div class="lg:col-span-5">
+              <div class="wireframe-placeholder rounded-2xl h-80 sm:h-96 lg:h-[420px] flex-col justify-between text-left p-6 shadow-xl border-2 border-gray-300 relative overflow-hidden bg-white">
+                <div class="flex items-center justify-between w-full">
+                  <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
+                    Master Hero Visual &bull; 16:10
+                  </span>
+                  <span class="text-[10px] font-mono text-gray-600 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                    800 × 500 px
+                  </span>
+                </div>
+
+                <!-- Central Composition -->
+                <div class="my-auto text-center py-6">
+                  <div class="w-16 h-16 rounded-2xl bg-gray-100 text-black flex items-center justify-center mx-auto mb-3 text-3xl font-black border border-gray-300 shadow-xs">
+                    📈
+                  </div>
+                  <div class="font-black text-gray-900 text-base">
+                    [IMAGE: Executive MBA Career Pivot & Resume Workshop]
+                  </div>
+                  <p class="text-xs text-gray-600 mt-1.5 max-w-sm mx-auto leading-relaxed">
+                    Strategy session focusing on leadership differentiation, recommender alignment, and Wharton Team-Based Discussion (TBD) interview simulations.
+                  </p>
+                </div>
+
+                <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[11px] text-gray-600 font-mono">
+                  <span>Target: Wharton &bull; HBS &bull; Stanford &bull; INSEAD</span>
+                  <span class="font-bold text-black">Format: Executive Advisory</span>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
 
-          <!-- Bottom Tab Navigation Bar (Clickable Slide Switchers) -->
-          <div class="bg-gray-100 border-t border-gray-200 p-2 sm:p-3 flex flex-wrap items-center justify-between gap-2">
-            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <button type="button" class="hero-slider-tab px-3 py-1.5 text-xs rounded-lg border-2 border-black bg-white text-black font-bold transition-all cursor-pointer">
-                01. Undergraduate Spikes
+        <!-- SLIDE 3: Master's & Specialized STEM/Finance Programs -->
+        <div class="hero-slider-slide py-12 lg:py-18 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-opacity duration-300 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Content Column (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-bold bg-gray-100 text-black border border-gray-300">
+                <span>Pathway 03</span>
+                <span>&bull;</span>
+                <span>Master's & STEM Fellowships</span>
+              </div>
+              
+              <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                Securing Top 25 STEM Master's & Institutional Fellowships
+              </h2>
+              
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Rigorous statement of purpose (SOP) design, peer-reviewed research mentorship, and direct faculty matching for competitive Computer Science, AI/ML, Data Analytics, and Quantitative Finance programs.
+              </p>
+
+              <!-- High-Impact Numbers Highlights Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl">
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">88%</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Top 25 Placement</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">MIT, CMU, Stanford</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">3 Years</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">US STEM OPT</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Career Work Permit</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">$62K</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Avg Fellowship</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Institutional Aid</div>
+                </div>
+              </div>
+
+              <!-- Primary CTAs -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="contact.html#consultation-form" class="px-6 py-3.5 rounded-lg bg-black text-white hover:bg-gray-800 font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+                  <span>Evaluate Master's Profile</span>
+                  <span>&rarr;</span>
+                </a>
+                <a href="masters.html" class="px-6 py-3.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 font-bold text-xs uppercase tracking-wider transition-all">
+                  Explore MS Disciplines
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Visual Image Column (5 cols) -->
+            <div class="lg:col-span-5">
+              <div class="wireframe-placeholder rounded-2xl h-80 sm:h-96 lg:h-[420px] flex-col justify-between text-left p-6 shadow-xl border-2 border-gray-300 relative overflow-hidden bg-white">
+                <div class="flex items-center justify-between w-full">
+                  <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
+                    Master Hero Visual &bull; 16:10
+                  </span>
+                  <span class="text-[10px] font-mono text-gray-600 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                    800 × 500 px
+                  </span>
+                </div>
+
+                <!-- Central Composition -->
+                <div class="my-auto text-center py-6">
+                  <div class="w-16 h-16 rounded-2xl bg-gray-100 text-black flex items-center justify-center mx-auto mb-3 text-3xl font-black border border-gray-300 shadow-xs">
+                    💻
+                  </div>
+                  <div class="font-black text-gray-900 text-base">
+                    [IMAGE: Graduate Research Lab & SOP Architecture Session]
+                  </div>
+                  <p class="text-xs text-gray-600 mt-1.5 max-w-sm mx-auto leading-relaxed">
+                    Collaborative candidate session reviewing research paper manuscripts, principal investigator alignment, and graduate assistantship applications.
+                  </p>
+                </div>
+
+                <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[11px] text-gray-600 font-mono">
+                  <span>Programs: AI/ML &bull; Data Science &bull; Quant Finance</span>
+                  <span class="font-bold text-black">Work Authorization: 3-Year STEM</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SLIDE 4: Verified Student Outcomes & Admit Records -->
+        <div class="hero-slider-slide py-12 lg:py-18 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-opacity duration-300 hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Content Column (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-bold bg-gray-100 text-black border border-gray-300">
+                <span>Pathway 04</span>
+                <span>&bull;</span>
+                <span>Verified 2024–2026 Admissions Results</span>
+              </div>
+              
+              <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                1,200+ Offers from Harvard, Stanford, Oxford & Wharton
+              </h2>
+              
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Real case studies of students transforming non-linear profiles into standout applications. Discover how high-conviction narrative strategy consistently delivers verified results.
+              </p>
+
+              <!-- High-Impact Numbers Highlights Strip -->
+              <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl">
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">98%</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Top 3 Choice Placement</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">First-Choice Target</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">1,200+</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Verified Offers</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Ivy, Top 20 & M7</div>
+                </div>
+                <div class="p-3.5 bg-gray-50 rounded-xl border border-gray-200">
+                  <div class="text-2xl sm:text-3xl font-black text-black">15+ Yrs</div>
+                  <div class="text-[11px] font-bold text-gray-800 uppercase tracking-wide mt-0.5">Advisory Track Record</div>
+                  <div class="text-[10px] text-gray-500 mt-0.5 font-mono">Proven Legacy</div>
+                </div>
+              </div>
+
+              <!-- Primary CTAs -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="undergraduate-success.html" class="px-6 py-3.5 rounded-lg bg-black text-white hover:bg-gray-800 font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+                  <span>Read Admit Case Studies</span>
+                  <span>&rarr;</span>
+                </a>
+                <a href="about.html#team" class="px-6 py-3.5 rounded-lg border-2 border-black text-black hover:bg-gray-100 font-bold text-xs uppercase tracking-wider transition-all">
+                  Meet Admissions Mentors
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Visual Image Column (5 cols) -->
+            <div class="lg:col-span-5">
+              <div class="wireframe-placeholder rounded-2xl h-80 sm:h-96 lg:h-[420px] flex-col justify-between text-left p-6 shadow-xl border-2 border-gray-300 relative overflow-hidden bg-white">
+                <div class="flex items-center justify-between w-full">
+                  <span class="px-2.5 py-1 rounded bg-black text-white text-[10px] font-mono font-bold tracking-wide uppercase">
+                    Master Hero Visual &bull; 16:10
+                  </span>
+                  <span class="text-[10px] font-mono text-gray-600 bg-gray-100 px-2 py-0.5 rounded border border-gray-200">
+                    800 × 500 px
+                  </span>
+                </div>
+
+                <!-- Central Composition -->
+                <div class="my-auto text-center py-6">
+                  <div class="w-16 h-16 rounded-2xl bg-gray-100 text-black flex items-center justify-center mx-auto mb-3 text-3xl font-black border border-gray-300 shadow-xs">
+                    🏆
+                  </div>
+                  <div class="font-black text-gray-900 text-base">
+                    [IMAGE: Verified Admit Letter Showcase & Student Success]
+                  </div>
+                  <p class="text-xs text-gray-600 mt-1.5 max-w-sm mx-auto leading-relaxed">
+                    Student celebration showcase displaying official acceptance letters from Harvard, Stanford, Oxford, and Wharton alongside mentor testimonials.
+                  </p>
+                </div>
+
+                <div class="w-full pt-3 border-t border-gray-200 flex items-center justify-between text-[11px] text-gray-600 font-mono">
+                  <span>Outcomes: 100% Verified Admits</span>
+                  <span class="font-bold text-black">Status: Verified Records</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Master Hero Slider Bottom Program Switcher Bar -->
+        <div class="border-t border-gray-200 bg-gray-100">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <button type="button" class="hero-slider-tab px-4 py-2 text-xs rounded-lg border-2 border-black bg-white text-black font-bold transition-all cursor-pointer shadow-2xs">
+                01. Undergraduate (Class 8–12)
               </button>
-              <button type="button" class="hero-slider-tab px-3 py-1.5 text-xs rounded-lg border-2 border-transparent text-gray-500 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
-                02. MBA Advisory
+              <button type="button" class="hero-slider-tab px-4 py-2 text-xs rounded-lg border-2 border-transparent text-gray-600 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
+                02. MBA Advisory (M7 & Top 10)
               </button>
-              <button type="button" class="hero-slider-tab px-3 py-1.5 text-xs rounded-lg border-2 border-transparent text-gray-500 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
-                03. Master's & STEM
+              <button type="button" class="hero-slider-tab px-4 py-2 text-xs rounded-lg border-2 border-transparent text-gray-600 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
+                03. Master's & STEM Fellowships
               </button>
-              <button type="button" class="hero-slider-tab px-3 py-1.5 text-xs rounded-lg border-2 border-transparent text-gray-500 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
-                04. Verified Outcomes
+              <button type="button" class="hero-slider-tab px-4 py-2 text-xs rounded-lg border-2 border-transparent text-gray-600 hover:text-black hover:bg-gray-200 transition-all cursor-pointer">
+                04. Verified 1,200+ Offers
               </button>
             </div>
 
-            <!-- Dots Indicator -->
-            <div class="flex items-center space-x-1.5 px-2">
+            <!-- Progress Dots -->
+            <div class="flex items-center space-x-2 px-2">
               <span class="hero-slider-dot h-2 w-6 rounded-full bg-black cursor-pointer transition-all"></span>
               <span class="hero-slider-dot h-2 w-2 rounded-full bg-gray-300 hover:bg-gray-500 cursor-pointer transition-all"></span>
               <span class="hero-slider-dot h-2 w-2 rounded-full bg-gray-300 hover:bg-gray-500 cursor-pointer transition-all"></span>
               <span class="hero-slider-dot h-2 w-2 rounded-full bg-gray-300 hover:bg-gray-500 cursor-pointer transition-all"></span>
             </div>
           </div>
-
         </div>
 
-        <!-- 5 Clickable Segment Cards with Live Proof Metrics (Crimson Benchmark) -->
-        <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-6">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-black">
-              Select Your Admissions Pathway
-            </h2>
-            <p class="text-xs sm:text-sm text-gray-500 mt-1">Explore tailored roadmaps, benchmark cutoffs, and verified outcomes</p>
+      </div>
+
+      <!-- Institutional Trust Strip -->
+      <div class="border-t border-gray-200 bg-white py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-500 font-mono">
+            Direct Mentorship for Global Top Institutions:
+          </span>
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-bold text-gray-700 font-mono">
+            <span>HARVARD</span>
+            <span>&bull;</span>
+            <span>STANFORD</span>
+            <span>&bull;</span>
+            <span>OXFORD</span>
+            <span>&bull;</span>
+            <span>CAMBRIDGE</span>
+            <span>&bull;</span>
+            <span>WHARTON</span>
+            <span>&bull;</span>
+            <span>MIT</span>
+            <span>&bull;</span>
+            <span>COLUMBIA</span>
+            <span>&bull;</span>
+            <span>INSEAD</span>
+            <span>&bull;</span>
+            <span>YALE</span>
           </div>
+        </div>
+      </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            
-            <!-- UG -->
-            <a href="undergraduate.html" class="p-5 rounded-xl bg-white border-2 border-gray-200 hover:border-gray-700 hover:shadow-lg transition-all group flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-2xl">🎓</span>
-                  <span class="px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-bold">6.9x Odds</span>
-                </div>
-                <h3 class="font-bold text-sm text-gray-900 group-hover:text-black">Undergraduate</h3>
-                <p class="text-xs text-gray-500 mt-1">Class 8–12 Profile Spikes & Common App</p>
-              </div>
-              <span class="mt-4 text-xs font-bold text-black flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                Explore UG &rarr;
-              </span>
-            </a>
+    </section>
 
-            <!-- Master's -->
-            <a href="masters.html" class="p-5 rounded-xl bg-white border-2 border-gray-200 hover:border-gray-700 hover:shadow-lg transition-all group flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-2xl">🔬</span>
-                  <span class="px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-bold">88% Top 25</span>
-                </div>
-                <h3 class="font-bold text-sm text-gray-900 group-hover:text-black">Master's (MS/MA)</h3>
-                <p class="text-xs text-gray-500 mt-1">STEM, AI/ML, Data Science & Finance</p>
-              </div>
-              <span class="mt-4 text-xs font-bold text-black flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                Explore MS &rarr;
-              </span>
-            </a>
-
-            <!-- MBA -->
-            <a href="mba.html" class="p-5 rounded-xl bg-white border-2 border-gray-200 hover:border-gray-700 hover:shadow-lg transition-all group flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-2xl">💼</span>
-                  <span class="px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-bold">M7 & Top 10</span>
-                </div>
-                <h3 class="font-bold text-sm text-gray-900 group-hover:text-black">MBA Advisory</h3>
-                <p class="text-xs text-gray-500 mt-1">Wharton, HBS, Stanford GSB & INSEAD</p>
-              </div>
-              <span class="mt-4 text-xs font-bold text-black flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                Explore MBA &rarr;
-              </span>
-            </a>
-
-            <!-- Test Prep -->
-            <a href="test-prep.html" class="p-5 rounded-xl bg-white border-2 border-gray-200 hover:border-gray-700 hover:shadow-lg transition-all group flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-2xl">📊</span>
-                  <span class="px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-bold">+190 Pts SAT</span>
-                </div>
-                <h3 class="font-bold text-sm text-gray-900 group-hover:text-black">Test Prep & Transfer</h3>
-                <p class="text-xs text-gray-500 mt-1">Digital SAT, ACT, GRE, GMAT & Transfer</p>
-              </div>
-              <span class="mt-4 text-xs font-bold text-black flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                Explore Prep &rarr;
-              </span>
-            </a>
-
-            <!-- Parents -->
-            <a href="about.html" class="p-5 rounded-xl bg-white border-2 border-gray-200 hover:border-gray-700 hover:shadow-lg transition-all group flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-2xl">👨‍👩‍👧</span>
-                  <span class="px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-bold">Advisory</span>
-                </div>
-                <h3 class="font-bold text-sm text-gray-900 group-hover:text-black">Parents & Families</h3>
-                <p class="text-xs text-gray-500 mt-1">Family Roadmap & Financial Planning</p>
-              </div>
-              <span class="mt-4 text-xs font-bold text-black flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                Family Hub &rarr;
-              </span>
-            </a>
-
+    <!-- ================= 2. ADMISSIONS PATHWAYS (WITH PROMINENT NUMBERS HIGHLIGHTS) ================= -->
+    <section id="admissions-pathways" class="py-16 lg:py-20 bg-gray-50 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-white text-black border border-gray-300 mb-3 shadow-2xs">
+            <span class="w-2 h-2 rounded-full bg-black"></span>
+            <span>5 Distinct Admissions Tracks</span>
           </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
+            Select Your Admissions Pathway
+          </h2>
+          <p class="text-sm sm:text-base text-gray-600 mt-2.5 leading-relaxed">
+            Transparent acceptance odds, verified test score cutoffs, and tailored strategic roadmaps for each applicant category.
+          </p>
+        </div>
+
+        <!-- 5 High-Impact Pathway Cards with PROMINENT NUMBERS HIGHLIGHTS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+          
+          <!-- PATHWAY 1: Undergraduate -->
+          <a href="undergraduate.html" class="p-6 rounded-2xl bg-white border-2 border-gray-200 hover:border-black hover:shadow-xl transition-all group flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <!-- PROMINENT NUMBER HIGHLIGHT BLOCK -->
+              <div class="mb-4 pb-4 border-b border-gray-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-4xl font-black text-black tracking-tight">6.9x</span>
+                  <span class="text-xs font-bold text-gray-600 uppercase">Odds</span>
+                </div>
+                <div class="text-[11px] font-bold text-gray-700 uppercase tracking-wider mt-0.5">Higher Acceptance Rate</div>
+                <div class="mt-1.5 inline-block px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-mono font-semibold border border-gray-300">
+                  28.6% OnCourse vs 4.1% Avg
+                </div>
+              </div>
+
+              <!-- Pathway Meta -->
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">🎓</span>
+                  <h3 class="font-black text-base text-gray-900 group-hover:text-black">Undergraduate</h3>
+                </div>
+                <p class="text-xs font-bold text-gray-600">Class 8–12 Longitudinal Strategy</p>
+                <ul class="text-xs text-gray-500 space-y-1 pt-2">
+                  <li>&bull; Extracurricular Spikes & Research</li>
+                  <li>&bull; Common App & UCAS Portfolios</li>
+                  <li>&bull; 1-on-1 Admissions Director Pairing</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-black group-hover:translate-x-0.5 transition-transform">
+              <span>Explore UG Pathway</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <!-- PATHWAY 2: Master's & Postgraduate -->
+          <a href="masters.html" class="p-6 rounded-2xl bg-white border-2 border-gray-200 hover:border-black hover:shadow-xl transition-all group flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <!-- PROMINENT NUMBER HIGHLIGHT BLOCK -->
+              <div class="mb-4 pb-4 border-b border-gray-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-4xl font-black text-black tracking-tight">88%</span>
+                  <span class="text-xs font-bold text-gray-600 uppercase">Top 25</span>
+                </div>
+                <div class="text-[11px] font-bold text-gray-700 uppercase tracking-wider mt-0.5">Global Placement Rate</div>
+                <div class="mt-1.5 inline-block px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-mono font-semibold border border-gray-300">
+                  MIT, Stanford, CMU & Oxford
+                </div>
+              </div>
+
+              <!-- Pathway Meta -->
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">🔬</span>
+                  <h3 class="font-black text-base text-gray-900 group-hover:text-black">Master's (MS/MA)</h3>
+                </div>
+                <p class="text-xs font-bold text-gray-600">STEM, Data Science & Finance</p>
+                <ul class="text-xs text-gray-500 space-y-1 pt-2">
+                  <li>&bull; Technical SOP & Research Match</li>
+                  <li>&bull; 3-Year US STEM OPT Work Permit</li>
+                  <li>&bull; $35K–$85K Institutional Aid</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-black group-hover:translate-x-0.5 transition-transform">
+              <span>Explore MS Pathway</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <!-- PATHWAY 3: MBA & Executive Advisory -->
+          <a href="mba.html" class="p-6 rounded-2xl bg-white border-2 border-gray-200 hover:border-black hover:shadow-xl transition-all group flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <!-- PROMINENT NUMBER HIGHLIGHT BLOCK -->
+              <div class="mb-4 pb-4 border-b border-gray-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-4xl font-black text-black tracking-tight">82%</span>
+                  <span class="text-xs font-bold text-gray-600 uppercase">M7 Calls</span>
+                </div>
+                <div class="text-[11px] font-bold text-gray-700 uppercase tracking-wider mt-0.5">Interview Invite Rate</div>
+                <div class="mt-1.5 inline-block px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-mono font-semibold border border-gray-300">
+                  Wharton, HBS, Stanford & LBS
+                </div>
+              </div>
+
+              <!-- Pathway Meta -->
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">💼</span>
+                  <h3 class="font-black text-base text-gray-900 group-hover:text-black">MBA Advisory</h3>
+                </div>
+                <p class="text-xs font-bold text-gray-600">M7 & Top 10 Executive Strategy</p>
+                <ul class="text-xs text-gray-500 space-y-1 pt-2">
+                  <li>&bull; GMAT Focus 705+ Coaching</li>
+                  <li>&bull; Executive Resume & Leadership</li>
+                  <li>&bull; $48.5K Avg Merit Fellowship</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-black group-hover:translate-x-0.5 transition-transform">
+              <span>Explore MBA Pathway</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <!-- PATHWAY 4: Test Prep & Transfer -->
+          <a href="test-prep.html" class="p-6 rounded-2xl bg-white border-2 border-gray-200 hover:border-black hover:shadow-xl transition-all group flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <!-- PROMINENT NUMBER HIGHLIGHT BLOCK -->
+              <div class="mb-4 pb-4 border-b border-gray-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-4xl font-black text-black tracking-tight">+190</span>
+                  <span class="text-xs font-bold text-gray-600 uppercase">Pts</span>
+                </div>
+                <div class="text-[11px] font-bold text-gray-700 uppercase tracking-wider mt-0.5">Average SAT Increase</div>
+                <div class="mt-1.5 inline-block px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-mono font-semibold border border-gray-300">
+                  +3.8 ACT &bull; +45 GMAT Focus
+                </div>
+              </div>
+
+              <!-- Pathway Meta -->
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">📊</span>
+                  <h3 class="font-black text-base text-gray-900 group-hover:text-black">Test Prep & Transfer</h3>
+                </div>
+                <p class="text-xs font-bold text-gray-600">Adaptive Diagnostics & Transfer</p>
+                <ul class="text-xs text-gray-500 space-y-1 pt-2">
+                  <li>&bull; 1-on-1 Diagnostic Error Analysis</li>
+                  <li>&bull; University Transfer Track</li>
+                  <li>&bull; Full-Length Simulated Proctors</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-black group-hover:translate-x-0.5 transition-transform">
+              <span>Explore Test Prep</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <!-- PATHWAY 5: Parents & Families -->
+          <a href="about.html" class="p-6 rounded-2xl bg-white border-2 border-gray-200 hover:border-black hover:shadow-xl transition-all group flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <!-- PROMINENT NUMBER HIGHLIGHT BLOCK -->
+              <div class="mb-4 pb-4 border-b border-gray-100">
+                <div class="flex items-baseline gap-1">
+                  <span class="text-4xl font-black text-black tracking-tight">$14.2M</span>
+                  <span class="text-xs font-bold text-gray-600 uppercase">Total</span>
+                </div>
+                <div class="text-[11px] font-bold text-gray-700 uppercase tracking-wider mt-0.5">Merit Scholarships Secured</div>
+                <div class="mt-1.5 inline-block px-2 py-0.5 rounded bg-gray-100 text-black text-[10px] font-mono font-semibold border border-gray-300">
+                  98% Top 3 Target Admittance
+                </div>
+              </div>
+
+              <!-- Pathway Meta -->
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-lg">👨‍👩‍👧</span>
+                  <h3 class="font-black text-base text-gray-900 group-hover:text-black">Parents & Families</h3>
+                </div>
+                <p class="text-xs font-bold text-gray-600">Longitudinal Family Planning</p>
+                <ul class="text-xs text-gray-500 space-y-1 pt-2">
+                  <li>&bull; Curriculum & Board Selection</li>
+                  <li>&bull; Global Education Financial ROI</li>
+                  <li>&bull; Milestone Review Consultation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-black group-hover:translate-x-0.5 transition-transform">
+              <span>Explore Family Advisory</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
         </div>
 
       </div>
     </section>
 
-    <!-- ================= 2. DATA-DRIVEN PROOF: COMPARATIVE ADMISSIONS ODDS (CRIMSON BENCHMARK) ================= -->
+    <!-- ================= 3. DATA-DRIVEN PROOF: COMPARATIVE ADMISSIONS ODDS (CRIMSON BENCHMARK) ================= -->
     <section class="bg-black text-white py-14 border-b border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-10">
-          <span class="text-xs font-bold uppercase tracking-widest text-black">Data-Driven Verification</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Data-Driven Verification</span>
           <h2 class="text-2xl sm:text-4xl font-black mt-1">
             The Power of Strategic Mentorship: Comparative Acceptance Rates
           </h2>
