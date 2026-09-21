@@ -1,26 +1,54 @@
-/* OnCourse Global — UX Wireframe Styling System */
-/* STRICT BLACK AND WHITE / MONOCHROME WIREFRAME PALETTE */
+/* OnCourse Global — Architectural Wireframe Styling System */
+/* CLIENT SPECIFICATION COLOR PALETTE */
+/*
+   Image 1:
+   - White:        #FFFFFF (RGB 255/255/255)
+   - Fog grey:     #CCCCCC (RGB 204/204/204, Pantone Cool Gray 1 C)
+   - Smoke grey:   #7D7D7D (RGB 125/125/125, Pantone Cool Gray 8 C)
+   - Iron grey:    #4D4D4D (RGB 77/77/77, Pantone Cool Gray 10 C)
+   - Midnight grey:#262626 (RGB 38/38/38, Pantone 426 C)
+   - Black:        #1A1A1A (RGB 26/26/26, Pantone 419 C)
+
+   Image 2:
+   - White Sand:   #E7E7DD (RGB 231/231/221, Pantone 427 C)
+   - White Ivory:  #FFFFF7 (RGB 255/255/247, Pantone 663 C)
+   - Black C:      #1D1D1B (RGB 29/29/27, Pantone Black C)
+*/
+
+:root {
+  --color-white: #FFFFFF;
+  --color-white-ivory: #FFFFF7;
+  --color-white-sand: #E7E7DD;
+  --color-fog-grey: #CCCCCC;
+  --color-smoke-grey: #7D7D7D;
+  --color-iron-grey: #4D4D4D;
+  --color-midnight-grey: #262626;
+  --color-black: #1A1A1A;
+  --color-black-c: #1D1D1B;
+}
 
 /* ================= 1. Accessibility Focus Ring ================= */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #000000 !important;
+  outline: 2px solid #1A1A1A !important;
   outline-offset: 2px !important;
 }
 
-/* ================= 2. Wireframe Placeholder Visual Tokens ================= */
+/* Selection */
+::selection {
+  background-color: #E7E7DD !important;
+  color: #1A1A1A !important;
+}
+
+/* ================= 2. Wireframe Placeholder Visual Tokens (NO STRIPES) ================= */
+/* Strictly NO repeating linear gradients or stripes. Uses solid palette colors. */
 .wireframe-placeholder {
-  background: repeating-linear-gradient(
-    45deg,
-    #f3f4f6,
-    #f3f4f6 10px,
-    #e5e7eb 10px,
-    #e5e7eb 20px
-  );
-  border: 2px dashed #9ca3af;
+  background-color: #E7E7DD !important; /* White Sand */
+  background-image: none !important;
+  border: 1px solid #CCCCCC !important; /* Fog grey */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4b5563;
+  color: #4D4D4D !important; /* Iron grey */
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.875rem;
   font-weight: 500;
@@ -29,18 +57,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .wireframe-placeholder-dark {
-  background: repeating-linear-gradient(
-    45deg,
-    #171717,
-    #171717 10px,
-    #262626 10px,
-    #262626 20px
-  );
-  border: 2px dashed #525252;
+  background-color: #262626 !important; /* Midnight grey */
+  background-image: none !important;
+  border: 1px solid #4D4D4D !important; /* Iron grey */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #a3a3a3;
+  color: #CCCCCC !important; /* Fog grey */
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.875rem;
   font-weight: 500;
@@ -48,17 +71,74 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   padding: 1rem;
 }
 
-/* Subtle smooth scroll */
-html {
-  scroll-behavior: smooth;
+/* Palette Specific Image Placeholders (Solid Fills, Zero Stripes) */
+.wireframe-placeholder-sand {
+  background-color: #E7E7DD !important;
+  background-image: none !important;
+  border: 1px solid #CCCCCC !important;
+  color: #4D4D4D !important;
 }
 
-/* Transitions */
+.wireframe-placeholder-fog {
+  background-color: #CCCCCC !important;
+  background-image: none !important;
+  border: 1px solid #7D7D7D !important;
+  color: #1A1A1A !important;
+}
+
+.wireframe-placeholder-smoke {
+  background-color: #7D7D7D !important;
+  background-image: none !important;
+  border: 1px solid #4D4D4D !important;
+  color: #FFFFF7 !important;
+}
+
+.wireframe-placeholder-iron {
+  background-color: #4D4D4D !important;
+  background-image: none !important;
+  border: 1px solid #262626 !important;
+  color: #FFFFF7 !important;
+}
+
+.wireframe-placeholder-midnight {
+  background-color: #262626 !important;
+  background-image: none !important;
+  border: 1px solid #4D4D4D !important;
+  color: #CCCCCC !important;
+}
+
+.wireframe-placeholder-black {
+  background-color: #1A1A1A !important;
+  background-image: none !important;
+  border: 1px solid #262626 !important;
+  color: #E7E7DD !important;
+}
+
+.wireframe-placeholder-ivory {
+  background-color: #FFFFF7 !important;
+  background-image: none !important;
+  border: 1px solid #CCCCCC !important;
+  color: #1A1A1A !important;
+}
+
+.wireframe-placeholder-white {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  border: 1px solid #CCCCCC !important;
+  color: #1A1A1A !important;
+}
+
+/* Smooth scrolling and transitions */
+html {
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+}
+
 .transition-drawer {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Custom Scrollbar for Hub Filters */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -67,147 +147,242 @@ html {
   scrollbar-width: none;
 }
 
-/* ================= 3. BLACK & WHITE WIREFRAME COLOR OVERRIDES ================= */
-/* Enforce strict monochrome palette: Black (#000000, #111827), White (#ffffff), and Grays (#f9fafb, #f3f4f6, #e5e7eb, #d1d5db, #9ca3af, #4b5563) */
+/* ================= 3. CLIENT PALETTE MAPPINGS ================= */
 
-/* Dark Backgrounds -> Black / Deep Charcoal */
-.bg-blue-950,
-.bg-blue-900,
-.bg-blue-800,
-.bg-blue-700 {
-  background-color: #0a0a0a !important;
+/* Backgrounds */
+.bg-black {
+  background-color: #1A1A1A !important;
+}
+.bg-gray-950 {
+  background-color: #1A1A1A !important;
+}
+.bg-gray-900 {
+  background-color: #1D1D1B !important;
+}
+.bg-gray-800 {
+  background-color: #262626 !important;
+}
+.bg-gray-700 {
+  background-color: #4D4D4D !important;
+}
+.bg-gray-600 {
+  background-color: #7D7D7D !important;
+}
+.bg-gray-500 {
+  background-color: #7D7D7D !important;
+}
+.bg-gray-400 {
+  background-color: #CCCCCC !important;
+}
+.bg-gray-300 {
+  background-color: #CCCCCC !important;
+}
+.bg-gray-200 {
+  background-color: #E7E7DD !important;
+}
+.bg-gray-100 {
+  background-color: #E7E7DD !important;
+}
+.bg-gray-50 {
+  background-color: #FFFFF7 !important;
+}
+.bg-white {
+  background-color: #FFFFFF !important;
 }
 
-.bg-blue-600,
-.bg-blue-500,
-.bg-amber-600,
-.bg-amber-500,
-.bg-emerald-600,
-.bg-emerald-500 {
-  background-color: #171717 !important;
+/* Any previously colored utility classes mapped to palette */
+.bg-blue-950, .bg-blue-900, .bg-blue-800, .bg-blue-700 {
+  background-color: #1D1D1B !important;
+}
+.bg-blue-600, .bg-blue-500, .bg-amber-600, .bg-amber-500, .bg-emerald-600, .bg-emerald-500 {
+  background-color: #262626 !important;
+}
+.bg-blue-200, .bg-blue-100, .bg-amber-100, .bg-emerald-100, .bg-indigo-100, .bg-purple-100, .bg-red-100 {
+  background-color: #E7E7DD !important;
+}
+.bg-blue-50, .bg-amber-50, .bg-emerald-50 {
+  background-color: #FFFFF7 !important;
+}
+.bg-amber-400, .bg-emerald-400, .bg-cyan-400 {
+  background-color: #CCCCCC !important;
 }
 
-/* Light / Pastel Backgrounds -> Crisp Light Grays */
-.bg-blue-200,
-.bg-blue-100,
-.bg-amber-100,
-.bg-emerald-100,
-.bg-indigo-100,
-.bg-purple-100,
-.bg-red-100 {
-  background-color: #f3f4f6 !important;
+/* Text Colors */
+.text-black, .text-gray-950 {
+  color: #1A1A1A !important;
+}
+.text-gray-900 {
+  color: #1D1D1B !important;
+}
+.text-gray-800 {
+  color: #262626 !important;
+}
+.text-gray-700 {
+  color: #4D4D4D !important;
+}
+.text-gray-600 {
+  color: #4D4D4D !important;
+}
+.text-gray-500 {
+  color: #7D7D7D !important;
+}
+.text-gray-400 {
+  color: #7D7D7D !important;
+}
+.text-gray-300 {
+  color: #CCCCCC !important;
+}
+.text-gray-200 {
+  color: #E7E7DD !important;
+}
+.text-gray-100 {
+  color: #FFFFF7 !important;
+}
+.text-white {
+  color: #FFFFFF !important;
 }
 
-.bg-blue-50,
-.bg-amber-50,
-.bg-emerald-50 {
-  background-color: #f9fafb !important;
+/* Text Overrides for colored utility classes */
+.text-blue-950, .text-blue-900, .text-blue-800, .text-blue-700,
+.text-amber-900, .text-amber-800, .text-amber-700,
+.text-emerald-900, .text-emerald-800, .text-emerald-700, .text-emerald-600,
+.text-indigo-900, .text-indigo-800, .text-purple-900, .text-red-900, .text-amber-400 {
+  color: #1A1A1A !important;
 }
-
-.bg-amber-400,
-.bg-emerald-400,
-.bg-cyan-400 {
-  background-color: #e5e7eb !important;
+.text-blue-100, .text-blue-200, .text-blue-300, .text-amber-300, .text-emerald-300 {
+  color: #E7E7DD !important;
 }
-
-/* Text Colors -> Crisp Black / Dark Neutral Gray on Light Backgrounds */
-.text-blue-950,
-.text-blue-900,
-.text-blue-800,
-.text-blue-700,
-.text-amber-900,
-.text-amber-800,
-.text-amber-700,
-.text-emerald-900,
-.text-emerald-800,
-.text-emerald-700,
-.text-emerald-600,
-.text-indigo-900,
-.text-indigo-800,
-.text-purple-900,
-.text-red-900 {
-  color: #111827 !important;
-}
-
-/* Light Text on Dark Backgrounds -> Crisp White / Light Grays */
-.text-blue-100,
-.text-blue-200,
-.text-blue-300,
-.text-amber-300,
-.text-emerald-300 {
-  color: #d1d5db !important;
-}
-
 .text-blue-400 {
-  color: #9ca3af !important;
+  color: #CCCCCC !important;
 }
 
-/* Active Amber Indicators -> High-Contrast Crisp White on Dark Subnav */
-.bg-blue-950 .text-amber-400,
+/* Active Nav Indicators */
 .bg-black .text-amber-400,
 nav .text-amber-400 {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
-
-.bg-blue-950 .border-amber-400,
 .bg-black .border-amber-400,
 nav .border-amber-400 {
-  border-color: #ffffff !important;
+  border-color: #FFFFFF !important;
 }
 
-/* Standalone Amber / Emerald Accent Text */
-.text-amber-400 {
-  color: #111827 !important;
+/* Border Colors */
+.border-black, .border-gray-950 {
+  border-color: #1A1A1A !important;
 }
-
-/* Borders -> Clean Wireframe Grays and Blacks */
-.border-blue-900,
-.border-blue-800,
-.border-blue-700 {
+.border-gray-900 {
+  border-color: #1D1D1B !important;
+}
+.border-gray-800 {
   border-color: #262626 !important;
 }
-
-.border-blue-600,
-.border-blue-500,
-.border-blue-400 {
-  border-color: #525252 !important;
+.border-gray-700 {
+  border-color: #4D4D4D !important;
+}
+.border-gray-600 {
+  border-color: #7D7D7D !important;
+}
+.border-gray-500 {
+  border-color: #7D7D7D !important;
+}
+.border-gray-400 {
+  border-color: #CCCCCC !important;
+}
+.border-gray-300 {
+  border-color: #CCCCCC !important;
+}
+.border-gray-200 {
+  border-color: #E7E7DD !important;
+}
+.border-gray-100 {
+  border-color: #E7E7DD !important;
+}
+.border-white {
+  border-color: #FFFFFF !important;
 }
 
-.border-blue-300,
-.border-blue-200,
-.border-blue-100,
-.border-amber-200,
-.border-emerald-200 {
-  border-color: #e5e7eb !important;
+/* Border Overrides for colored classes */
+.border-blue-900, .border-blue-800, .border-blue-700 {
+  border-color: #262626 !important;
 }
-
-.border-amber-400,
-.border-amber-500 {
-  border-color: #111827 !important;
+.border-blue-600, .border-blue-500, .border-blue-400 {
+  border-color: #4D4D4D !important;
+}
+.border-blue-300, .border-blue-200, .border-blue-100, .border-amber-200, .border-emerald-200 {
+  border-color: #E7E7DD !important;
+}
+.border-amber-400, .border-amber-500 {
+  border-color: #1A1A1A !important;
 }
 
 /* Rings & Focus */
-.ring-blue-600,
-.ring-blue-500 {
-  --tw-ring-color: #000000 !important;
+.ring-blue-600, .ring-blue-500, .ring-black {
+  --tw-ring-color: #1A1A1A !important;
 }
 
-/* Hover States -> Wireframe Monochromes */
-.hover\:bg-blue-800:hover,
-.hover\:bg-blue-900:hover {
+/* Hover States */
+.hover\:bg-gray-100:hover {
+  background-color: #E7E7DD !important;
+}
+.hover\:bg-gray-200:hover {
+  background-color: #CCCCCC !important;
+}
+.hover\:bg-gray-800:hover {
   background-color: #262626 !important;
 }
+.hover\:bg-gray-900:hover {
+  background-color: #1D1D1B !important;
+}
+.hover\:bg-black:hover {
+  background-color: #1A1A1A !important;
+}
+.hover\:text-black:hover {
+  color: #1A1A1A !important;
+}
+.hover\:border-black:hover {
+  border-color: #1A1A1A !important;
+}
+.hover\:border-gray-400:hover {
+  border-color: #CCCCCC !important;
+}
 
+.hover\:bg-blue-800:hover, .hover\:bg-blue-900:hover {
+  background-color: #262626 !important;
+}
 .hover\:bg-blue-50:hover {
-  background-color: #f3f4f6 !important;
+  background-color: #E7E7DD !important;
 }
-
-.hover\:text-blue-900:hover,
-.hover\:text-blue-800:hover,
-.group:hover .group-hover\:text-blue-900 {
-  color: #000000 !important;
+.hover\:text-blue-900:hover, .hover\:text-blue-800:hover, .group:hover .group-hover\:text-blue-900 {
+  color: #1A1A1A !important;
 }
-
 .group:hover .group-hover\:bg-blue-800 {
   background-color: #262626 !important;
 }
+
+/* Dedicated Palette Utility Classes */
+.bg-palette-white { background-color: #FFFFFF !important; }
+.bg-palette-ivory { background-color: #FFFFF7 !important; }
+.bg-palette-sand  { background-color: #E7E7DD !important; }
+.bg-palette-fog   { background-color: #CCCCCC !important; }
+.bg-palette-smoke { background-color: #7D7D7D !important; }
+.bg-palette-iron  { background-color: #4D4D4D !important; }
+.bg-palette-midnight { background-color: #262626 !important; }
+.bg-palette-black { background-color: #1A1A1A !important; }
+.bg-palette-black-c { background-color: #1D1D1B !important; }
+
+.text-palette-white { color: #FFFFFF !important; }
+.text-palette-ivory { color: #FFFFF7 !important; }
+.text-palette-sand  { color: #E7E7DD !important; }
+.text-palette-fog   { color: #CCCCCC !important; }
+.text-palette-smoke { color: #7D7D7D !important; }
+.text-palette-iron  { color: #4D4D4D !important; }
+.text-palette-midnight { color: #262626 !important; }
+.text-palette-black { color: #1A1A1A !important; }
+.text-palette-black-c { color: #1D1D1B !important; }
+
+.border-palette-sand { border-color: #E7E7DD !important; }
+.border-palette-fog  { border-color: #CCCCCC !important; }
+.border-palette-smoke { border-color: #7D7D7D !important; }
+.border-palette-iron  { border-color: #4D4D4D !important; }
+.border-palette-midnight { border-color: #262626 !important; }
+.border-palette-black { border-color: #1A1A1A !important; }
